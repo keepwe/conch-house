@@ -10,46 +10,46 @@
 		</div>
 		<div class="sy_tab">
 			<ul class="sy_tubiao">
-				<li>
+				<router-link to="/esf" tag="li">
 					<img src="../../static/images/tubiao/index_esf.png"/>
 					<span>二手房</span>
-				</li>
-				<li class="con">
+				</router-link>
+				<router-link to="/zf" tag="li">
 					<img src="../../static/images/tubiao/index_zufang.png"/>
 					<span>租房</span>
-				</li>
-				<li>
+				</router-link>
+				<router-link to="/xf" tag="li">
 					<img src="../../static/images/tubiao/index_newhouse.jpg"/>
 					<span>新房</span>
-				</li>
-				<li class="con">
+				</router-link>
+				<router-link to="/hw" tag="li">
 					<img src="../../static/images/tubiao/index_hw.png"/>
 					<span>海外</span>
-				</li>
-				<li>
+				</router-link>
+				<router-link to="/zx" tag="li">
 					<img src="../../static/images/tubiao/index_zhuangxiu.png"/>
 					<span>装修</span>
-				</li>
-				<li>
+				</router-link>
+				<router-link to="/mf" tag="li">
 					<img src="../../static/images/tubiao/index_saleh.png"/>
 					<span>卖房</span>
-				</li>
-				<li class="con">
+				</router-link>
+				<router-link to="/zxq" tag="li">
 					<img src="../../static/images/tubiao/index_xiaoqu.png"/>
 					<span>找小区</span>
-				</li>
-				<li>
+				</router-link>
+				<router-link to="/ccj" tag="li">
 					<img src="../../static/images/tubiao/index_ccj.png"/>
 					<span>查成交</span>
-				</li>
-				<li class="con">
+				</router-link>
+				<router-link to="/fwgj" tag="li">
 					<img src="../../static/images/tubiao/index_fwgz.png"/>
 					<span style="text-indent: -12px;">房屋估价</span>
-				</li>
-				<li>
+				</router-link>
+				<router-link to="/bk" tag="li">
 					<img src="../../static/images/tubiao/index_bk.png"/>
 					<span>百科</span>
-				</li>	
+				</router-link>	
 			</ul>
 			<ul class="sy_seehouse">
 				<li>
@@ -289,7 +289,7 @@
 	height:76px;
 	background:rgba(255,255,255,1);
 	border-radius:38px;
-	box-shadow:4px 0px 10px rgba(0,0,0,0.12);
+	box-shadow:4px 2px 10px rgba(0,0,0,0.12);
 	padding: 18px 69px 16px;
 	box-sizing: border-box;
 }
