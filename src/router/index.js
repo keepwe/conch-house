@@ -14,6 +14,7 @@ import Zxiaoqu from '../components/Zxiaoqu'
 import Cchengjiao from '../components/Cchengjiao'
 import Fwugujia from '../components/Fwugujia'
 import Baike from '../components/Baike'
+import Login from '../components/Login'
 
 
 Vue.use(Router);
@@ -75,6 +76,10 @@ export default new Router({
     {
       path: '/bk',
       component: Baike
+    },
+    {
+      path: '/login',
+      component: Login
     },
     {
       path: '*',
