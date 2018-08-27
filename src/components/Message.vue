@@ -9,11 +9,16 @@
         <span class="iconfont icon-fanhui"></span>
       </div>
     </div>
-	</div>
+    <v-footer></v-footer>
+  </div>
 </template>
 <script>
+	import Footer from "./Footer"
 	export default{
-		name:"Message"
+		name:"Message",
+		components:{
+		  "v-footer":Footer
+		}
 	}
 </script>
 

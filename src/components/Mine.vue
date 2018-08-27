@@ -91,12 +91,17 @@
        </span>
       </div>
     </div>
+    <v-footer></v-footer>
   </div>
 </template>
 
 <script>
-  export default {
-    name: "Mine"
+  import Footer from "./Footer"
+  export default{
+    name:"Mine",
+    components:{
+      "v-footer":Footer
+    }
   }
 </script>
 
