@@ -16,7 +16,7 @@ ul,li,ol{list-style:none;}
 img,fieldset{border:0; }
 a{text-decoration:none; color:#333;}
 h1,h2,h3,h4,h5,h6{font-weight:100;}
-body{
+body{font-family: "方正兰亭细黑_GBK";
 font-size: 16px}
 input,a{outline:none;}
 .router-link-active{
