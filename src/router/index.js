@@ -4,6 +4,7 @@ import Home from '../components/home'
 import Search from '../components/search'
 import Message from '../components/message'
 import Mine from '../components/mine'
+import Login from '../components/login'
 
 Vue.use(Router);
 
@@ -25,7 +26,10 @@ export default new Router({
       path: '/mine',
       component: Mine
     },
-
+    {
+      path: '/login',
+      component: Login
+    },
     {
       path: '*',
       redirect:"/home"

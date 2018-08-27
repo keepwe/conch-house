@@ -20,7 +20,7 @@ body{
 font-size: 16px}
 input,a{outline:none;}
 .router-link-active{
-	color: #FF9012;
+	color: #FF9012
 }
 .fr{
   float: right;
@@ -29,7 +29,7 @@ input,a{outline:none;}
   float: left;
 }
 #app {
-  height: 100%;
+  height: 100vh;
 }
 
 </style>

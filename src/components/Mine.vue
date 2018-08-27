@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <div class="my_header">
-      <h1 class="my_login"><span>登录</span> / <span>注册</span></h1>
+      <h1 class="my_login"><router-link to="/login"><span>登录</span></router-link> / <router-link to="register"><span>注册</span></router-link></h1>
       <p>注册手机号不会透露给经纪人</p>
     </div>
     <div class="my_jilu">

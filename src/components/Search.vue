@@ -47,7 +47,7 @@
     border: 1px solid rgba(0, 0, 0, 1);
     opacity: 0.42;
     border-radius: 38px;
-    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.36);
+    box-shadow:  4px 0 10px rgba(0, 0, 0, 0.36);
     vertical-align: middle;
   }
 
