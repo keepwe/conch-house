@@ -107,19 +107,19 @@
 
 <style scoped>
   .box{
-    margin: 0 49px 105px 51px;
+    margin: 0 0.49rem 1.05rem 0.51rem;
   }
   /*头*/
-.my_header{
-  margin-top: 105px;
-}
+  .my_header{
+    margin-top: 1.05rem;
+  }
   .my_header .my_login{
-    font-size: 46px;
+    font-size: 0.46rem;
   }
   .my_header p{
-    font-size: 23px;
+    font-size: 0.23rem;
     opacity: .5;
-    margin-top: 34px;
+    margin-top: 0.34rem;
   }
   /*记录委托条件*/
   .my_jilu{
@@ -127,23 +127,23 @@
     justify-content: space-between;
     align-content: center;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 0.8rem;
   }
   .my_jilu div h2{
-    font-size: 46px;
+    font-size: 0.46rem;
   }
   .my_jilu div span{
-    font-size: 28px;
+    font-size: 0.28rem;
     opacity: .5;
   }
   /*我的关注,我的房子*/
   .my_gz,.my_house{
-    margin: 60px auto 6px;
+    margin: 0.6rem auto 0.06rem;
   }
   .my_gz .gz_title,.my_house .house_title{
-    font-size: 45px;
+    font-size: 0.45rem;
     font-weight: 100;
-    margin-bottom: 39px;
+    margin-bottom: 0.39rem;
   }
   .my_gz_list{
     display: flex;
@@ -152,71 +152,71 @@
     text-align: center;
   }
   .my_gz_list img{
-    width: 45px;
-    height: 46px;
-    margin: 0 auto 20px;
+    width: 0.45rem;
+    height: 0.46rem;
+    margin: 0 auto 0.2rem;
   }
   .my_gz_list span{
     display: block;
     text-align: center;
-    font-size: 24px;
+    font-size: 0.24rem;
     opacity: .5;
   }
   .my_gz_list em{
     font-style: normal;
   }
   .red_bao img{
-    width: 627px;
-    height: 172px;
-    margin: 56px auto 66px;
-}
+    width: 6.27rem;
+    height: 1.72rem;
+    margin: 0.56rem auto 0.66rem;
+  }
   .my_house_add{
-    padding: 57px 30px 0;
-    height: 198px;
+    padding: 0.57rem 0.3rem 0;
+    height: 1.98rem;
     box-sizing: border-box;
     border-radius:3px;
-    box-shadow: 0px 4px 10px 4px rgba(0,0,0,0.12);
+    box-shadow: 0 0.04rem 0.1rem 0.04rem rgba(0,0,0,0.12);
     overflow: hidden;
   }
   .fl h3{
-    font-size: 36px;
-    margin-bottom: 18px;
+    font-size: 0.36rem;
+    margin-bottom: 0.18rem;
   }
   .fl p{
-    font-size: 24px;
+    font-size: 0.24rem;
     opacity: .5;
   }
   .fr span{
     display: inline-block;
-    margin-top: 24px;
-    width:133px;
-    height:57px;
+    margin-top: 0.24rem;
+    width:1.33rem;
+    height:0.57rem;
     border:2px solid rgba(255,144,18,1);
     border-radius:3px;
-    font-size:24px;
+    font-size:0.24rem;
     font-weight:100;
     color:rgba(255,144,18,1);
-    line-height:57px;
+    line-height:0.57rem;
     text-align: center;
   }
   .my_items .item{
-    font-size: 32px;
+    font-size: 0.32rem;
     overflow: hidden;
-    height: 108px;
+    height: 1.08rem;
     border-bottom: 1px solid #C0D3AC;
   }
   .my_items .item .fl{
-    height: 108px;
-    line-height: 108px;
-    margin-left: 2px;
+    height: 1.08rem;
+    line-height: 1.08rem;
+    margin-left: 0.02rem;
     vertical-align: middle;
   }
   .my_items .item .fr{
     display: inline-block;
-    height: 108px;
-    margin-right: 20px;
-    line-height: 108px;
-    font-size: 32px;
+    height: 1.08rem;
+    margin-right: 0.2rem;
+    line-height: 1.08rem;
+    font-size: 0.32rem;
     vertical-align: baseline;
   }
   .my_items .item .fr em{
@@ -224,6 +224,6 @@
     opacity: .5;
   }
   .my_items .item .fr i{
-    font-size: 32px;
+    font-size: 0.32rem;
   }
 </style>

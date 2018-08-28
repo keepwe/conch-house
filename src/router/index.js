@@ -18,6 +18,7 @@ import Login from '../components/Login'
 import FastLogin from '../components/FastLogin'
 import ForgetPass from '../components/ForgetPass'
 import Register from '../components/Register'
+import House from '../components/House'
 
 Vue.use(Router);
 
@@ -89,11 +90,15 @@ export default new Router({
     },
     {
       path: '/forgetpass',
-      component: ForgetPass, 
+      component: ForgetPass,
     },
     {
       path: '/register',
       component: Register
+    },
+    {
+      path: '/house',
+      component: House
     },
     {
       path: '*',

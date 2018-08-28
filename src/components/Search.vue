@@ -33,29 +33,29 @@
 
 <style scoped>
   header {
-    padding: 0 50px;
-    margin-top: 20px;
-    height: 100px;
+    padding: 0 0.5rem;
+    margin-top: 0.2rem;
+    height: 1rem;
     border-bottom: 1px solid #C0D3AC;
     overflow: hidden;
   }
 
   .search {
-    width: 529px;
-    height: 76px;
+    width: 5.29rem;
+    height: 0.76rem;
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(0, 0, 0, 1);
     opacity: 0.42;
     border-radius: 38px;
-    box-shadow:  4px 0 10px rgba(0, 0, 0, 0.36);
+    box-shadow:  0.04rem 0 0.1rem rgba(0, 0, 0, 0.36);
     vertical-align: middle;
   }
 
   .search img {
     display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin: 29px 21px 24px 31px;
+    width: 0.24rem;
+    height: 0.24rem;
+    margin: 0.29rem 0.21rem 0.24rem 0.31rem;
     vertical-align: middle;
   }
 
@@ -63,29 +63,29 @@
     display: inline-block;
     vertical-align: middle;
     outline: none;
-    font-size: 24px;
+    font-size: 0.24rem;
     border: 0;
-    width: 400px;
-    height: 70px;
-    line-height: 70px;
+    width: 4rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
   }
 
   header .qx {
-    font-size: 34px;
+    font-size: 0.34rem;
     vertical-align: middle;
-    height: 70px;
-    line-height: 70px;
+    height: 0.7rem;
+    line-height: 0.7rem;
   }
 
   .main {
-    margin: 0 50px;
+    margin: 0 0.5rem;
   }
 
   .main .list {
     border-bottom: 1px solid #C0D3AC;
-    height: 117px;
-    line-height: 117px;
-    font-size: 30px;
+    height: 1.17rem;
+    line-height: 1.17rem;
+    font-size: 0.3rem;
   }
 
   .main .lishi {
@@ -97,8 +97,8 @@
   }
 
   .main .lishi img {
-    width: 30px;
-    height: 30px;
-    margin-top: 45px;
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-top: 0.45rem;
   }
 </style>

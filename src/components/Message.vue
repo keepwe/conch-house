@@ -23,36 +23,36 @@
 </script>
 
 <style scoped>
-.msg_box{
-  height: 100vw;
-  background: #f2f2f2;
-}
-	header{
+  .msg_box{
+    height: 100vw;
+    background: #f2f2f2;
+  }
+  header{
     text-align: center;
-    height: 90px;
+    height: 0.9rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 36px;
+    font-size: 0.36rem;
     background: #fff;
   }
   .msg_list{
-    height: 110px;
+    height: 1.1rem;
     overflow: hidden;
     background: #fff;
-    margin-top: 40px;
-    padding: 0 53px;
+    margin-top: 0.4rem;
+    padding: 0 0.53rem;
   }
-.msg_list .fl img{
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  margin-top: 15px;
-}
-.msg_list .fr span{
-  display: block;
-  font-size: 26px;
-  height: 110px;
-  line-height: 110px;
-}
+  .msg_list .fl img{
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    margin-top: 0.15rem;
+  }
+  .msg_list .fr span{
+    display: block;
+    font-size: 0.26rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+  }
 </style>
