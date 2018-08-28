@@ -15,7 +15,9 @@ import Cchengjiao from '../components/Cchengjiao'
 import Fwugujia from '../components/Fwugujia'
 import Baike from '../components/Baike'
 import Login from '../components/Login'
-
+import FastLogin from '../components/FastLogin'
+import ForgetPass from '../components/ForgetPass'
+import Register from '../components/Register'
 
 Vue.use(Router);
 
@@ -80,6 +82,18 @@ export default new Router({
     {
       path: '/login',
       component: Login
+    },
+    {
+      path: '/fastlogin',
+      component: FastLogin
+    },
+    {
+      path: '/forgetpass',
+      component: ForgetPass, 
+    },
+    {
+      path: '/register',
+      component: Register
     },
     {
       path: '*',
