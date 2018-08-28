@@ -303,7 +303,7 @@
 	line-height: 20px;
 	border: 0;
 	font-size:30px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -320,7 +320,7 @@
 	width:72px;
 	height:34px;
 	font-size:36px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -330,7 +330,7 @@
 }
 .sy_tab{
 	margin-top: 63px;
-	padding: 0 14px;
+	padding: 0 36px;
 	box-sizing: border-box;
 }
 .sy_tubiao{
@@ -352,7 +352,7 @@
 .sy_tubiao span{
 	height:24px;
 	font-size:24px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -373,7 +373,7 @@
 .sy_seehouse span{
 	height:24px;
 	font-size:24px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -424,7 +424,7 @@
 .sy_conch_tit h1{
 	height:45px;
 	font-size:48px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -432,7 +432,7 @@
 .sy_conch_tit span,.sy_conch_tit i{
 	height:30px;
 	font-size:30px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:45px;
@@ -466,7 +466,7 @@
 }
 .sy_conch_con_l span,.sy_conch_con_r span{
 	font-size:24px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -479,7 +479,7 @@
 	padding: 18px 0;
 	height:45px;
 	font-size:48px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -500,7 +500,7 @@
 	display: block;
 	height:28px;
 	font-size:30px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -511,7 +511,7 @@
 	font-style: normal;
 	height:33px;
 	font-size:24px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:33px;
@@ -524,7 +524,7 @@
 .wntj_tit b{
 	height:45px;
 	font-size:48px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -534,7 +534,7 @@
 	margin-right: 20px;
 	height:29px;
 	font-size:30px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -564,7 +564,7 @@
 .wntj_con_name{
 	height:35px;
 	font-size:36px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -572,7 +572,7 @@
 .wntj_con_xx{
 	height:24px;
 	font-size:24px;
-	font-family:PingFangSC-Thin;
+	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -590,7 +590,6 @@
 .wntj_con span{
 	height:24px;
 	font-size:24px;
-	font-family:PingFangSC-Thin;
 	font-weight:100;
 	color:rgba(255,255,255,1);
 	line-height:30px;
@@ -602,7 +601,6 @@
 	float: left;
 	height:26px;
 	font-size:30px;
-	font-family:PingFangSC-Thin;
 	font-weight:100;
 	color:rgba(255,144,18,1);
 	line-height:30px;
@@ -612,8 +610,7 @@
 	float: left;
 	margin-top: 14px;
 	height:25px;
-	font-size:24px;
-	font-family:PingFangSC-Thin;
+	font-size:24px;	
 	font-weight:100;
 	color:rgba(1,1,1,1);
 	line-height:30px;
