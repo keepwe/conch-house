@@ -10,7 +10,7 @@
 		</router-link>
 		<router-link to="/message" tag="div">
 			<i class="iconfont icon-xiaoxi2"></i>
-			<span>消息</span>	
+			<span>消息</span>
 		</router-link>
 		<router-link to="/mine" tag="div">
 			<i class="iconfont icon-wo3"></i>
@@ -26,24 +26,24 @@
 </script>
 
 <style>
-footer{
-	width: 100%;
-	background: #fff;
-	position: fixed;
-	left: 0;
-	bottom: 0;	
-}
-footer div{
-	float: left;
-	width: 25%;
-	text-align: center;
-	padding: 13px 0;
-}
-footer div span{
-	display: block;
-	font-size: 24px;
-}
-.icon-shouye3,.icon-sousuo3,.icon-xiaoxi2,.icon-wo3{
-	font-size: 45px;
-}
+  footer{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  footer div{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 0.13rem 0;
+  }
+  footer div span{
+    display: block;
+    font-size: 0.24rem;
+  }
+ footer .icon-shouye3, footer .icon-sousuo3,footer .icon-xiaoxi2,footer .icon-wo3{
+    font-size: 0.45rem;
+  }
 </style>

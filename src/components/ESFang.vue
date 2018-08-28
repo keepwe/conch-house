@@ -39,7 +39,7 @@
         :props="props"
       ></el-cascader>
       <img src="../../static/images/tubiao/zf_sjt.png"/></div>
-    <div class="es_item">
+    <router-link to="/house"><div class="es_item">
       <div class="fl pic">
         <img src="../../static/images/picture/esf_p3.png"/>
       </div>
@@ -60,7 +60,7 @@
           <span class="unit_price">57,421元/平</span>
         </div>
       </div>
-    </div>
+    </div></router-link>
     <div class="es_item">
       <div class="fl pic">
         <img src="../../static/images/picture/esf_p3.png"/>

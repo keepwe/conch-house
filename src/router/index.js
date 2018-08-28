@@ -22,6 +22,7 @@ import MyJjr from '../components/Myjingjiren'
 import MyJy from '../components/MyJy'
 import MyDyss from '../components/MyDyss'
 import MyYhj from '../components/MyYhj'
+import House from '../components/House'
 
 Vue.use(Router);
 
@@ -93,7 +94,7 @@ export default new Router({
     },
     {
       path: '/forgetpass',
-      component: ForgetPass, 
+      component: ForgetPass,
     },
     {
       path: '/register',
@@ -114,6 +115,10 @@ export default new Router({
     {
       path: '/myyhj',
       component: MyYhj
+		},
+		{
+      path: '/house',
+      component: House
     },
     {
       path: '*',

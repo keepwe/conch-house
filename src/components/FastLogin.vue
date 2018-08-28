@@ -31,7 +31,6 @@
 </template>
 
 <script>
-	import { Button } from 'mint-ui';
 	export default {
 	    name: "FastLogin",
 	    data:function(){
@@ -128,51 +127,51 @@
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;
     opacity:0.31;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #fff;
-   opacity:0.31;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #fff;
-   opacity:0.31;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:   #fff;
-   opacity:0.31;
-}
-::-ms-input-placeholder { /* Microsoft Edge */
-   color:   #fff;
-   opacity:0.31;
-}
-.otherway{
-	text-align: center;
-}
-.l_con_help{
-	font-size:24px;
-	font-weight:bold;
-	color:rgba(0,0,0,1);
-	line-height:70px;
-	text-align: center;
-	margin-bottom: 252px;
-}
-.l_otherw_pic{
-	display: flex;
-	justify-content: space-around;
-	padding:0 100px;
-	box-sizing: border-box;
-}
-.l_otherw_pic img{
-	margin-left: -30px;
-	opacity: 0.6;
-}
-.otherway span{
-	height:24px;
-	font-size:24px;
-	font-weight:bolder;
-	color:rgba(0,0,0,1);
-	line-height:70px;
-	opacity:0.5;
-	
-}
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #fff;
+    opacity:0.31;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #fff;
+    opacity:0.31;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:   #fff;
+    opacity:0.31;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:   #fff;
+    opacity:0.31;
+  }
+  .otherway{
+    text-align: center;
+  }
+  .l_con_help{
+    font-size:0.24rem;
+    font-weight:bold;
+    color:rgba(0,0,0,1);
+    line-height:0.7rem;
+    text-align: center;
+    margin-bottom: 2.52rem;
+  }
+  .l_otherw_pic{
+    display: flex;
+    justify-content: space-around;
+    padding:0 1rem;
+    box-sizing: border-box;
+  }
+  .l_otherw_pic img{
+    margin-left: -0.3rem;
+    opacity: 0.6;
+  }
+  .otherway span{
+    height:0.24rem;
+    font-size:0.24rem;
+    font-weight:bolder;
+    color:rgba(0,0,0,1);
+    line-height:0.7rem;
+    opacity:0.5;
+
+  }
 </style>

@@ -13,7 +13,7 @@
 		  		<input type="text" class="pass"  placeholder="请输入新密码（最少8位数，数字+子母）" v-model="password"/>
 		  	</div>
 		  	<button id="re_commit">提交</button>
-		</div>		
+		</div>
 	</div>
 </template>
 
@@ -27,12 +27,12 @@
 				password:"",
 				dxyzm:"",
 				tit:"找回账号"
-			}	
+			}
 		},
 		components:{
 			"v-header":Header
 		},
-		mounted(){			
+		mounted(){
 //			location.reload()
 //			this.$router.go(0)
 //			this.$router.push({path:"/forgetpass"})
@@ -60,7 +60,7 @@
 	font-weight:normal;
 }
 input::placeholder{
-	color: rgba(0,0,0,0.8);
+	color: rgba(0,0,0,0.2);
 }
 .getyzm{
 	height:28px;
@@ -80,5 +80,41 @@ input::placeholder{
 	color: #fff;
 	outline: none;
 }
+  /*.forgetp_con{
+    padding: 0 0.5rem;
+    margin-top: 1.56rem;
+  }
+  .forgetp_con_user,.forgetp_con_pass,.forgetp_con_yzm{
+    height: 1.03rem;
+    line-height: 1.3rem;
+    border-bottom-width: thin;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,0.8);
+  }
+  .forgetp_con input{
+    width: 80%;
+    border: 0;
+    outline: none;
+    font-size:0.28rem;
+    font-weight:normal;
+    color:rgba(0,0,0,1);
+    opacity: 0.3;
+  }
+  .getyzm{
+    height:0.28rem;
+    font-size:0.28rem;
+    font-weight:normal;
+    color:rgba(0,0,0,0.5);
+    margin-left: -8%;
+  }
+  .mint-button{
+    height:0.94rem;
+    background:rgba(255,144,18,1);
+    border-radius:47px;
+    font-size: 0.36rem;
+  }
+  .mint-button--large{
+    margin-top: 1.19rem;
+  }*/
 
 </style>

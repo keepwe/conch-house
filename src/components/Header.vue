@@ -4,7 +4,7 @@
 		  <router-link to="/login" slot="left" @click="tap()">
 		    <mt-button><i class="iconfont icon-fanhuijiantou1"></i></mt-button>
 		  </router-link>
-		</mt-header>		
+		</mt-header>
 	</div>
 </template>
 
@@ -55,3 +55,4 @@
 	font-weight: 400;
 }	
 </style>
+
