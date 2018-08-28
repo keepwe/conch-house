@@ -328,7 +328,7 @@
 }
 .sy_tab{
 	margin-top: 63px;
-	padding: 0 14px;
+	padding: 0 36px;
 	box-sizing: border-box;
 }
 .sy_tubiao{
@@ -595,7 +595,7 @@
 	float: left;
 	margin-top: 14px;
 	height:25px;
-	font-size:24px;
+	font-size:24px;	
 	font-weight:100;
 	color:rgba(1,1,1,1);
 	line-height:30px;

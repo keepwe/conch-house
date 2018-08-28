@@ -1,22 +1,22 @@
 <template>
 <div id="login_box">
   <div class="lo_header">
-  	<router-link to="/mine" tag="span" class="fl">×</router-link>
+    <router-link to="/mine" tag="span" class="fl">×</router-link>
     <router-link to="/register" tag="span" class="fr">注册</router-link>
   </div>
   <div class="l_con">
-  	<h2>账号密码登录</h2>
+  	<h2>手机快捷登录</h2>
+  	<h6>未注册过的手机将会自动创建账号</h6>
   	<div class="l_con_user">
   		<input type="text" class="phonenum"  placeholder="请输入手机号" v-model="username"/>
+  		<span class="getyzm">获取验证码</span>
   	</div>
   	<div class="l_con_pass">
   		<input type="text" class="pass"  placeholder="请输入密码" v-model="password"/>
   	</div>
 		<mt-button type="primary" size="large">登录</mt-button>
 		<div class="l_con_help">
-	  	<router-link to="/fastlogin" tag="span">手机快捷登录</router-link>
-	  	<span>|</span>
-	  	<router-link to="/forgetpass" tag="span">忘记密码</router-link>
+	  	<router-link to="/login" tag="span">账号登录</router-link>
   	</div>
   </div>
   <div class="otherway">
@@ -33,7 +33,7 @@
 <script>
 	import { Button } from 'mint-ui';
 	export default {
-	    name: "Login",
+	    name: "FastLogin",
 	    data:function(){
 	    	return{
 	    		username:"",
@@ -43,10 +43,10 @@
 	}
 </script>
 
-<style>
+<style scoped="">
 #login_box{
 	height: 100%;
-	background: url("../../static/images/tubiao/login_bac.jpg");
+	background: url("../../static/images/tubiao/login_bac.jpg") center/cover;
 }
 .lo_header {
 	padding: 45px 58px 0 80px;
@@ -68,14 +68,21 @@
 	box-sizing: border-box;
 }
 .l_con h2{
-	font-family: "苹方 常规";
-	margin-top: 163px;
-	height: 42px;
-	line-height: 42px;
-	font-size:42px;
+	margin-top: 169px;
+	height:34px;
+	line-height:70px;
+	font-size:36px;
 	font-weight:normal;
 	color:rgba(255,255,255,1);
 	margin-bottom: 38px;
+	opacity:0.9;
+}
+.l_con h6{
+	height:24px;
+	font-size:24px;
+	font-weight:normal;
+	color:rgba(255,255,255,1);
+	opacity:0.45;
 }
 .l_con_user,.l_con_pass{
 	height: 103px;
@@ -85,6 +92,15 @@
 }
 .l_con_pass{
 	margin-bottom: 120px;
+}
+.getyzm{
+	height:32px;
+	font-size:32px;
+	font-weight:normal;
+	color:rgba(255,255,255,1);
+	line-height:70px;
+	opacity:0.62;
+	margin-left: 20%;
 }
 .mint-button{
 	height:94px;
@@ -109,7 +125,7 @@
 	border: 0;
 	outline: none;
 	color: #fff;
-	opacity:0.31;
+	opacity:0.61;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;
