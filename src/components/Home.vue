@@ -49,7 +49,7 @@
 				<router-link to="/bk" tag="li">
 					<img src="../../static/images/tubiao/index_bk.png"/>
 					<span>百科</span>
-				</router-link>	
+				</router-link>
 			</ul>
 			<ul class="sy_seehouse">
 				<li>
@@ -106,7 +106,7 @@
 						<img id="rm_P2" src="../../static/images/picture/index_p14.png" alt="" />
 						<span>首付120万起安家</span>
 					</div>
-				</div>	
+				</div>
 			</div>
 			<div class="sy_dncp">
 				<div class="sy_dncp_tit">
@@ -123,7 +123,7 @@
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
-				</div>	
+				</div>
 			</div>
 			<div class="sy_dncp">
 				<div class="sy_dncp_tit">
@@ -140,7 +140,7 @@
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
-				</div>	
+				</div>
 			</div>
 			<div class="sy_dncp">
 				<div class="sy_dncp_tit">
@@ -157,7 +157,7 @@
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
-				</div>	
+				</div>
 			</div>
 			<div class="sy_dncp">
 				<div class="sy_dncp_tit">
@@ -174,7 +174,7 @@
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
-				</div>	
+				</div>
 			</div>
 			<div class="sy_dncp">
 				<div class="sy_dncp_tit">
@@ -191,7 +191,7 @@
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
-				</div>	
+				</div>
 			</div>
 			<div class="sy_dncp">
 				<div class="sy_dncp_tit">
@@ -208,7 +208,7 @@
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
-				</div>	
+				</div>
 			</div>
 			<div class="wntj">
 				<div class="wntj_tit">
@@ -268,7 +268,7 @@
 </template>
 
 <script>
-	import Footer from "./Footer" 
+	import Footer from "./Footer"
 	export default{
 		name:"Home",
 		components:{
@@ -294,7 +294,7 @@
 	box-sizing: border-box;
 }
 .icon-sousuo1{
-	font-size: 42px;	
+	font-size: 42px;
 }
 .where_live{
 	text-indent: 17px;
@@ -303,7 +303,6 @@
 	line-height: 20px;
 	border: 0;
 	font-size:30px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -320,7 +319,6 @@
 	width:72px;
 	height:34px;
 	font-size:36px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -352,12 +350,11 @@
 .sy_tubiao span{
 	height:24px;
 	font-size:24px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
 	display: block;
-	margin-bottom: 25px;	
+	margin-bottom: 25px;
 }
 .sy_seehouse,.sy_conch,.sy_conch_con,.sy_rmzt_con,.sy_dncp_con,.wntj,.wntj_con{
 	overflow: hidden;
@@ -373,7 +370,6 @@
 .sy_seehouse span{
 	height:24px;
 	font-size:24px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -424,7 +420,6 @@
 .sy_conch_tit h1{
 	height:45px;
 	font-size:48px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -432,11 +427,10 @@
 .sy_conch_tit span,.sy_conch_tit i{
 	height:30px;
 	font-size:30px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:45px;
-	opacity:0.5;	
+	opacity:0.5;
 }
 .sy_conch_tit span{
 	margin-left: 46%;
@@ -460,13 +454,11 @@
 .sy_conch_con_l b,.sy_conch_con_r b{
 	display: block;
 	font-size:60px;
-	font-family:PingFangSC-Regular;
 	font-weight:400;
 	color:rgba(0,0,0,1);
 }
 .sy_conch_con_l span,.sy_conch_con_r span{
 	font-size:24px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -479,7 +471,6 @@
 	padding: 18px 0;
 	height:45px;
 	font-size:48px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -500,7 +491,6 @@
 	display: block;
 	height:28px;
 	font-size:30px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -511,7 +501,6 @@
 	font-style: normal;
 	height:33px;
 	font-size:24px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:33px;
@@ -524,7 +513,6 @@
 .wntj_tit b{
 	height:45px;
 	font-size:48px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -534,7 +522,6 @@
 	margin-right: 20px;
 	height:29px;
 	font-size:30px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -564,7 +551,6 @@
 .wntj_con_name{
 	height:35px;
 	font-size:36px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -572,7 +558,6 @@
 .wntj_con_xx{
 	height:24px;
 	font-size:24px;
-	
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:30px;
@@ -584,7 +569,7 @@
 	height:40px;
 	background:rgba(255,144,18,1);
 	padding: 8px 10px;
-	margin-right: 10px;	
+	margin-right: 10px;
 	box-sizing: border-box;
 }
 .wntj_con span{
