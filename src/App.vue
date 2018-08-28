@@ -5,6 +5,9 @@
 </template>
 
 <script>
+  var bw = (document.documentElement.clientWidth/7.5)+"px";
+  var htmlTag = document.getElementsByTagName("html")[0];
+  htmlTag.style.fontSize=bw;
 export default {
   name: 'App'
 }

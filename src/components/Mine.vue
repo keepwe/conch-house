@@ -200,7 +200,7 @@
     text-align: center;
   }
   .my_items .item{
-    font-size: 34px;
+    font-size: 32px;
     overflow: hidden;
     height: 108px;
     border-bottom: 1px solid #C0D3AC;
