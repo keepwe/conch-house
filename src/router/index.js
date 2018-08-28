@@ -18,6 +18,10 @@ import Login from '../components/Login'
 import FastLogin from '../components/FastLogin'
 import ForgetPass from '../components/ForgetPass'
 import Register from '../components/Register'
+import MyJjr from '../components/Myjingjiren'
+import MyJy from '../components/MyJy'
+import MyDyss from '../components/MyDyss'
+import MyYhj from '../components/MyYhj'
 
 Vue.use(Router);
 
@@ -94,6 +98,22 @@ export default new Router({
     {
       path: '/register',
       component: Register
+    },
+    {
+      path: '/myjjr',
+      component: MyJjr
+    },
+    {
+      path: '/myjy',
+      component: MyJy
+    },
+    {
+      path: '/mydyss',
+      component: MyDyss
+    },
+    {
+      path: '/myyhj',
+      component: MyYhj
     },
     {
       path: '*',

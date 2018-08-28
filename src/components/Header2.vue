@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<mt-header :title="name">
-		  <router-link to="/login" slot="left" @click="tap()">
+		  <router-link to="/" slot="left" @click="tap()">
 		    <mt-button><i class="iconfont icon-fanhuijiantou1"></i></mt-button>
 		  </router-link>
 		</mt-header>		
@@ -12,7 +12,7 @@
 	import { Header } from 'mint-ui';
 	export default{
 		props:["name"],
-		name:"Header",
+		name:"Header2",
 		data:function(){
 			return{
 				str:""
@@ -31,20 +31,20 @@
 
 <style>
 .mint-header{
-	margin-top: 30px;
-	padding: 39px 50px;
+	margin-top: 15px;
+	padding: 0 50px;
 	background: #fff;
-	height: 36px;
-	font-size:34px;
+	height: 90px;
+	font-size:36px;
 	font-family: "方正兰亭细黑_GBK";
 	font-weight:900;
 	color:rgba(0,0,0,1);
+	box-sizing: border-box;
 }
 .mintui{
 	font-size: 38px;
 }
 .mint-header-title{
-	font-weight: 600;
 	font-size: 36px;
 }
 .mint-header-button.is-left{
@@ -52,6 +52,5 @@
 }	
 .icon-fanhuijiantou1{
 	font-size: 40px;
-	font-weight: 400;
 }	
 </style>

@@ -105,7 +105,6 @@
 .mint-button{
 	height:94px;
 	background:rgba(41,174,226,0.58);
-	/*opacity:0.58;*/
 	border-radius:47px;
 }
 .mint-button-text{
@@ -113,10 +112,9 @@
 	font-size:47px;
 	font-weight:900;
 	line-height:94px;
-	/*color: rgba(255,255,255,0.96);*/
 	z-index: 222;
 }
-.phonenum,.pass{
+.l_con .phonenum,.l_con .pass{
 	margin-top: 53px;
 	height:28px;
 	font-size:28px;

@@ -1,24 +1,23 @@
 <template>
 	<div>
-		<v-header></v-header>
+		<v-header :name="tit"></v-header>
 		<div class="forgetp_con">
 			<div class="forgetp_con_user">
 		  		<input type="text" class="phonenum"  placeholder="请输入手机号" v-model="phonenum"/>
 		  		<span class="getyzm">获取验证码</span>
 		  	</div>
 		  	<div class="forgetp_con_yzm">
-		  		<input type="text" class="yzm"  placeholder="请输入短信验证码" v-model="dxyzm"/>
+		  		<input type="text" class="fgp_yzm"  placeholder="请输入短信验证码" v-model="dxyzm"/>
 		  	</div>
 		  	<div class="forgetp_con_pass">
 		  		<input type="text" class="pass"  placeholder="请输入新密码（最少8位数，数字+子母）" v-model="password"/>
 		  	</div>
-			<mt-button type="primary" size="large">提交</mt-button>	
+		  	<button id="re_commit">提交</button>
 		</div>		
 	</div>
 </template>
 
 <script>
-	
 	import Header from "./Header"
 	export default{
 		name:"ForgetPass",
@@ -26,7 +25,8 @@
 			return{
 				phonenum:"",
 				password:"",
-				dxyzm:""
+				dxyzm:"",
+				tit:"找回账号"
 			}	
 		},
 		components:{
@@ -58,8 +58,9 @@
 	outline: none;
 	font-size:28px;
 	font-weight:normal;
-	color:rgba(0,0,0,1);
-	opacity: 0.3;
+}
+input::placeholder{
+	color: rgba(0,0,0,0.8);
 }
 .getyzm{
 	height:28px;
@@ -68,14 +69,16 @@
 	color:rgba(0,0,0,0.5);
 	margin-left: -8%;
 }
-.mint-button{
+#re_commit{
+	margin-top: 119px;
+	width: 100%;
 	height:94px;
+	border: 0;
 	background:rgba(255,144,18,1);
 	border-radius:47px;
 	font-size: 36px;
-}
-.mint-button--large{
-	margin-top: 119px;
+	color: #fff;
+	outline: none;
 }
 
 </style>

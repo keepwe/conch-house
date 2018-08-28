@@ -12,7 +12,7 @@
   	<div class="l_con_pass">
   		<input type="text" class="pass"  placeholder="请输入密码" v-model="password"/>
   	</div>
-		<mt-button type="primary" size="large">登录</mt-button>
+		<mt-button type="primary" size="large" @click="tap()">登录</mt-button>
 		<div class="l_con_help">
 	  	<router-link to="/fastlogin" tag="span">手机快捷登录</router-link>
 	  	<span>|</span>
@@ -31,13 +31,17 @@
 </template>
 
 <script>
-	import { Button } from 'mint-ui';
 	export default {
 	    name: "Login",
 	    data:function(){
 	    	return{
 	    		username:"",
 	    		password:""
+	    	}
+	    },
+	    methods:{
+	    	tap(){
+	    	   this.$router.push('/mine')
 	    	}
 	    }
 	}
@@ -46,7 +50,7 @@
 <style>
 #login_box{
 	height: 100%;
-	background: url("../../static/images/tubiao/login_bac.jpg");
+	background: url("../../static/images/tubiao/login_bac.jpg") no-repeat center/cover;
 }
 .lo_header {
 	padding: 45px 58px 0 80px;
@@ -97,10 +101,9 @@
 	font-size:47px;
 	font-weight:900;
 	line-height:94px;
-	/*color: rgba(255,255,255,0.96);*/
 	z-index: 222;
 }
-.phonenum,.pass{
+.l_con .phonenum,.l_con .pass{
 	margin-top: 53px;
 	height:28px;
 	font-size:28px;
@@ -109,7 +112,7 @@
 	border: 0;
 	outline: none;
 	color: #fff;
-	opacity:0.31;
+	opacity:0.61;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;

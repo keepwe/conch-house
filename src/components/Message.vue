@@ -24,7 +24,7 @@
 
 <style scoped>
 .msg_box{
-  height: 100vw;
+  height: 100vh;
   background: #f2f2f2;
 }
 	header{
