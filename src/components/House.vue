@@ -91,11 +91,137 @@
           </tr>
         </table>
       </div>
+      <!--更多按钮-->
       <div class="more">
-        <button></button>
+        <button>更多房源信息</button>
+      </div>
+      <!--推荐经纪人-->
+      <div class="agent">
+        <p class="bar_name">推荐经纪人</p>
+        <div class="agent_item">
+          <div class="agent_pic fl">
+            <img src="../../static/images/picture/esf_house_use3.png"/>
+          </div>
+          <div class="agent_content fl">
+            <p class="agent_name">王磊</p>
+            <p class="agent_score">评分<span>4.9</span>/<span>34</span>人评价</p>
+            <p class="agent_desc">本房信息由我维护，有变化最快得知</p>
+          </div>
+          <div class="agent_contact fl">
+            <img src="../../static/images/tubiao/esf_house_message1.png" class="message"/>
+            <img src="../../static/images/tubiao/esf_house_tell.png" class="tell"/></div>
+        </div>
+        <div class="agent_item">
+          <div class="agent_pic fl">
+            <img src="../../static/images/picture/esf_house_use1.png"/>
+          </div>
+          <div class="agent_content fl">
+            <p class="agent_name">王磊</p>
+            <p class="agent_score">评分<span>4.9</span>/<span>34</span>人评价</p>
+            <p class="agent_desc">本房信息由我维护，有变化最快得知</p>
+          </div>
+          <div class="agent_contact fl">
+            <img src="../../static/images/tubiao/esf_house_message1.png" class="message"/>
+            <img src="../../static/images/tubiao/esf_house_tell.png" class="tell"/></div>
+        </div>
+        <div class="agent_item">
+          <div class="agent_pic fl">
+            <img src="../../static/images/picture/esf_house_use2.png"/>
+          </div>
+          <div class="agent_content fl">
+            <p class="agent_name">王磊</p>
+            <p class="agent_score">评分<span>4.9</span>/<span>34</span>人评价</p>
+            <p class="agent_desc">本房信息由我维护，有变化最快得知</p>
+          </div>
+          <div class="agent_contact fl">
+            <img src="../../static/images/tubiao/esf_house_message1.png" class="message"/>
+            <img src="../../static/images/tubiao/esf_house_tell.png" class="tell"/></div>
+        </div>
+      </div>
+      <!--户型格局-->
+      <div class="huxing">
+        <p class="bar_name">户型格局</p>
+        <div class="huxing_desc">
+          <p>客厅：<span>114m²/东/普通窗</span></p>
+          <p>卧室A：<span>114m²/东/普通窗</span></p>
+          <p>卧室B：<span>114m²/东/普通窗</span></p>
+        </div>
+        <div id="allmap" ref="allmap"></div>
+      </div>
+      <!--房源介绍-->
+      <div class="fangyuan_desc">
+        <p class="bar_name">
+          <span>房源介绍</span>
+          <span class="iconfont icon-fanhui"></span>
+        </p>
+        <p class="jieshao">
+          小区生活便利。超市：首航超市、京客隆超市。医院：中山医院、朝阳区中西结合医院、垂杨柳医院、双龙社区医院。
+          银行：中国银行、农业银行、邮政储蓄、建设银行。其他：京体游泳健身、燕莎奥特莱斯...
+        </p>
+      </div>
+      <!--房源动态-->
+      <div class="dongtai">
+        <p class="bar_name">
+          <span>房源动态</span>
+        </p>
+        <div class="dt_detail">
+          <div class="week">
+            <p class="title">近7日带看（次）</p>
+            <p class="sum">22</p>
+          </div>
+          <div class="month">
+            <p class="title">近30日带看（次）</p>
+            <p class="sum">22</p>
+          </div>
+          <div class="follow">
+            <p class="title">关注房源</p>
+            <p class="sum">3755</p>
+          </div>
+        </div>
+      </div>
+      <div class="daikan">
+        <!--带看记录-->
+        <p class="bar_name">
+          <span>带看记录</span>
+          <span>最近带看 2018-07-16<span class="iconfont icon-fanhui"></span></span>
+        </p>
+        <!--房源时间轴-->
+        <p class="bar_name">
+          <span>房源时间轴</span>
+          <span>挂牌时间 2018-07-16<span class="iconfont icon-fanhui"></span></span>
+        </p>
+      </div>
+      <!--南新园-->
+      <div class="nxy_box">
+        <p class="bar_name">
+          <span>带看记录</span>
+          <span>小区详情<span class="iconfont icon-fanhui"></span></span>
+        </p>
+        <div class="nxy_desc">
+            <div class="fl es_content">
+              <h3 class="es_title">
+                龙城花园北二区&nbsp;一室一厅
+              </h3>
+              <p class="es_desc">
+                46.19平米/南/顶层&nbsp;共四层
+              </p>
+              <div class="es_tags">
+                <span>满两年</span>
+                <span>地铁</span>
+                <span>随时可看</span>
+              </div>
+              <div class="es_price">
+                <span class="price_sum">265万</span>
+                <span class="unit_price">57,421元/平</span>
+              </div>
+            </div>
+          <div class="fr pic">
+            <img src="../../static/images/picture/esf_p3.png"/>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -104,12 +230,26 @@
     methods: {
       goback() {
         this.$router.back(-1);
+      },
+      map() {
+        let map = new BMap.Map(this.$refs.allmap); // 创建Map实例
+        map.centerAndZoom("郑州", 17);// 初始化地图,设置中心点坐标和地图级别
+
+        map.setCurrentCity("郑州");// 设置地图显示的城市 此项是必须设置的
+        map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
       }
+    },
+    mounted() {
+      this.map()
     }
   }
 </script>
 
 <style scoped>
+  #allmap {
+    height: 3.8rem;
+  }
+
   header {
     height: 4.6rem;
     background-image: url("../../static/images/picture/esf_house_tu.jpg");
@@ -144,11 +284,13 @@
     margin-top: 0.3rem;
   }
 
-  .main .detail {
+  .main .detail, .main .dongtai .dt_detail {
     margin-top: 0.3rem;
     display: flex;
     font-size: 0;
+    height: 0.98rem;
     justify-content: space-between;
+    border-bottom: 1px solid #aaa;
   }
 
   .main .detail .price, .main .detail .type {
@@ -157,7 +299,7 @@
     height: 0.68rem;
   }
 
-  .main .detail .area {
+  .main .detail .area, .week, .month, .follow {
     height: 0.68rem;
   }
 
@@ -222,25 +364,170 @@
     color: #fff;
   }
 
-  .house_desc{
+  .house_desc {
     height: 4.17rem;
   }
-  .house_desc table{
+
+  .house_desc table {
     height: 100%;
     width: 100%;
   }
-  .house_desc table tr td:nth-child(1), .house_desc table tr td:nth-child(3){
+
+  .house_desc table tr td:nth-child(1), .house_desc table tr td:nth-child(3) {
     color: #aaa;
     font-size: 0.28rem;
     width: 0.9rem;
   }
-  .house_desc table tr td:nth-child(2),.house_desc table tr td:nth-child(4){
+
+  .house_desc table tr td:nth-child(2), .house_desc table tr td:nth-child(4) {
     font-size: 0.27rem;
   }
-  .house_desc table tr td:nth-child(2){
+
+  .house_desc table tr td:nth-child(2) {
     width: 2.5rem;
   }
-  .budget,.xq_name{
+
+  .budget, .xq_name {
     color: #ff9722;
+  }
+
+  .more {
+    height: 1rem;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .more button {
+    width: 100%;
+    height: 0.7rem;
+    color: #fff;
+    font-size: 0.28rem;
+    font-family: "方正兰亭纤黑_GBK";
+    letter-spacing: 4px;
+    background: #ff9722;
+    border-radius: 0.1rem;
+    border: 0;
+    outline: none;
+  }
+
+  .bar_name {
+    height: 0.88rem;
+    font-size: 0.28rem;
+    line-height: 0.88rem;
+  }
+
+  .agent {
+    border-bottom: 1px solid #aaa;
+  }
+
+  .agent_item {
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+  }
+
+  .agent_item .agent_pic {
+    margin-right: 0.2rem;
+  }
+
+  .agent_item .agent_pic img {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+  }
+
+  .agent .agent_content .agent_name {
+    font-size: 0.26rem;
+    margin-top: 0.14rem;
+  }
+
+  .agent .agent_content .agent_score {
+    font-size: 0.23rem;
+    margin-top: 0.23rem;
+  }
+
+  .agent .agent_content .agent_desc {
+    font-size: 0.23rem;
+    margin-top: 0.2rem;
+    line-height: 0.4rem;
+    color: #aaa;
+  }
+
+  .agent .agent_contact {
+    margin-top: 0.26rem;
+  }
+
+  .agent .agent_contact .message {
+    margin-right: 0.4rem;
+  }
+
+  .huxing .huxing_desc {
+    font-size: 0.23rem;
+  }
+
+  .huxing .huxing_desc p {
+    margin-bottom: 0.25rem;
+  }
+
+  .fangyuan_desc {
+    border-bottom: 1px solid #aaa;
+  }
+
+  .fangyuan_desc .bar_name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fangyuan_desc .jieshao {
+    font-size: 0.23rem;
+    line-height: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  .main .dt_detail .title {
+    font-size: 0.25rem;
+    color: #aaa;
+  }
+
+  .main .dongtai .dt_detail {
+    margin: 0;
+  }
+
+  .main .dt_detail .sum {
+    font-size: 0.28rem;
+    color: #000;
+    font-weight: 900;
+    margin-top: 0.2rem;
+  }
+
+  .daikan .bar_name {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .nxy_box .bar_name span:nth-child(2),.daikan .bar_name span:nth-child(2) {
+    font-size: 0.22rem;
+    color: #aaa;
+  }
+
+  .daikan .bar_name span:nth-child(2) span {
+    margin-left: 0.3rem;
+  }
+  .nxy_box{
+    height: 2.55rem;
+  }
+  .nxy_box .bar_name{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nxy_box .nxy_desc{
+    height: 1.37rem;
+  }
+  .nxy_box .nxy_desc .pic img{
+    width: 1.9rem;
+    height: 1.37rem;
   }
 </style>
