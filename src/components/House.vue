@@ -32,7 +32,13 @@
 
 <script>
     export default {
-        name: "House"
+        name: "House",
+        methods:{
+        	goback(){
+        		this.$router.back(-1)
+        	}
+        	
+        }
     }
 </script>
 

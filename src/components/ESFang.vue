@@ -1,6 +1,6 @@
 <template>
 	<div class="es_house">
-		<header>
+	<header>
       <span class="iconfont icon-navbankicon" @click="goback()"></span>
       <div class="sy_search_kuang">
         <i class="iconfont icon-sousuo1"></i>
@@ -38,7 +38,8 @@
         @active-item-change="handleItemChange"
         :props="props"
       ></el-cascader>
-      <img src="../../static/images/tubiao/zf_sjt.png"/></div>
+      <img src="../../static/images/tubiao/zf_sjt.png"/>
+    </div>
     <router-link to="/house"><div class="es_item">
       <div class="fl pic">
         <img src="../../static/images/picture/esf_p3.png"/>
@@ -176,7 +177,7 @@
 
 <script>
 
-	export default{
+export default{
 		name:"ESFang",
     data() {
       return {
@@ -212,7 +213,7 @@
         }, 300);
       }
     }
-	}
+}
 </script>
 
 <style>
