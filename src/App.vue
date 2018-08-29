@@ -9,7 +9,7 @@
   var htmlTag = document.getElementsByTagName("html")[0];
   htmlTag.style.fontSize=bw;
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 
