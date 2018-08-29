@@ -1,12 +1,21 @@
 <template>
 	<div>
-		<h1>装修</h1>
+		<v-header :name="tit"></v-header>
 	</div>
 </template>
 
 <script>
+	import Header3 from "./Header3"
 	export default{
-		name:"Zhuangxiu"
+		name:"Zhuangxiu",
+		data(){
+			return{
+				tit:"海螺装修"
+			}
+		},
+		components:{
+			"v-header": Header3
+		}
 	}
 </script>
 
