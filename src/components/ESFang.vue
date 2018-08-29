@@ -1,6 +1,6 @@
 <template>
-  <div class="es_house">
-    <header>
+	<div class="es_house">
+	<header>
       <span class="iconfont icon-navbankicon" @click="goback()"></span>
       <div class="sy_search_kuang">
         <i class="iconfont icon-sousuo1"></i>
@@ -38,7 +38,8 @@
         @active-item-change="handleItemChange"
         :props="props"
       ></el-cascader>
-      <img src="../../static/images/tubiao/zf_sjt.png"/></div>
+      <img src="../../static/images/tubiao/zf_sjt.png"/>
+    </div>
     <div class="es_items">
       <router-link to="/house">
         <div class="es_item">
@@ -61,7 +62,7 @@
               <span class="price_sum">265万</span>
               <span class="unit_price">57,421元/平</span>
             </div>
-          </div>
+         	</div>
         </div>
       </router-link>
       <div class="es_item">
@@ -179,10 +180,9 @@
 </template>
 
 <script>
-
-  export default {
-    name: "ESFang",
-    data() {
+export default{
+	name:"ESFang",
+    data(){
       return {
         options2: [{
           label: '江苏',
@@ -216,27 +216,27 @@
         }, 300);
       }
     }
-  }
+}
 </script>
 
 <style>
-  .es_house header {
+  .es_house header{
     display: flex;
     height: 1.02rem;
     justify-content: space-between;
     align-items: center;
     margin: 0 0.5rem;
   }
-  .es_house header span {
+  .es_house header span{
     font-size: 0.42rem;
   }
 
-  .es_house .es_search {
+  .es_house .es_search{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0 0.5rem;
   }
 
-  .es_house .sy_search_kuang {
+  .es_house .sy_search_kuang{
     width: 5rem;
     height: 0.6rem;
     background: rgba(255, 255, 255, 1);
@@ -245,12 +245,12 @@
     box-sizing: border-box;
   }
 
-  .es_house .sy_search_kuang i {
+  .es_house .sy_search_kuang i{
     margin: 0 0.33rem 0 0.37rem;
     font-size: 0.34rem;
   }
 
-  .es_house .sy_search_kuang input {
+  .es_house .sy_search_kuang input{
     width: 3.5rem;
     height: 0.54rem;
     line-height: 0.54rem;
@@ -261,7 +261,7 @@
     opacity: 0.5;
   }
 
-  .es_house .es_search {
+  .es_house .es_search{
     display: flex;
     height: 1.04rem;
     justify-content: space-between;
