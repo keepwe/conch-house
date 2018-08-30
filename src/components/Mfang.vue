@@ -97,7 +97,7 @@
   .mf_box header{
     padding: 0 0.5rem;
     height: 4.3rem;
-    background: url("../../static/images/picture/mf_banner.jpg") -1.29rem -1.71rem no-repeat;
+    background: url("../../static/images/picture/mf_banner.jpg") -1.36rem -1.80rem no-repeat;
   }
   .mf_box header .title{
     display: flex;
