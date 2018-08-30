@@ -33,7 +33,7 @@
 #header3{
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-.mint-header{
+#header3 .mint-header{
 	margin: 0.34rem 0.50rem 0.26rem;
 	background: #fff;
 	height: 0.36rem;
@@ -43,17 +43,17 @@
 	color:rgba(0,0,0,1);
 	padding: 0;	
 }
-.mintui{
+#header3 .mintui{
 	font-size: 0.38rem;
 }
-.mint-header-title{
+#header3 .mint-header-title{
 	font-weight: 100;
 	font-size: 0.36rem;
 }
-.mint-header-button.is-left{
+#header3 .mint-header-button.is-left{
 	margin-top: -0.06rem;
 }	
-.icon-fanhuijiantou1{
+#header3 .icon-fanhuijiantou1{
 	font-size: 0.40rem;
 	font-weight: 400;
 }	

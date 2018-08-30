@@ -31,11 +31,8 @@
 </script>
 
 <style>
-#header3{
-	border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-.mint-header{
-	margin: 0.37rem 0.50rem 0;
+#header4  .mint-header{
+	margin: 0.37rem 0.4rem 0;
 	background: #fff;
 	height: 0.36rem;
 	font-size:0.36rem;
@@ -43,20 +40,20 @@
 	font-weight:900;
 	color:rgba(0,0,0,1);	
 }
-.mintui{
+#header4 .mintui{
 	font-size: 0.36rem;
 }
-.mint-header-button.is-right{
+#header4 .mint-header-button.is-right{
 	font-size: 0.46rem;
 }
-.mint-header-title{
+#header4 .mint-header-title{
 	font-weight: 100;
 	font-size: 0.36rem;
 }
-.mint-header-button.is-left{
+#header4 .mint-header-button.is-left{
 	margin-top: -0.06rem;
 }	
-.icon-fanhuijiantou1{
+#header4 .icon-fanhuijiantou1{
 	font-size: 0.40rem;
 	font-weight: 400;
 }
