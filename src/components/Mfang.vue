@@ -124,7 +124,7 @@
     margin-top: 0.1rem;
     color: rgba(255,255,255,0.6);
   }
-  .gujia_zixun,.liucheng,.fabu{
+  .gujia_zixun,.liucheng,.fabu,.jieshao{
     margin: 0 0.5rem;
   }
   .mf_box .main .gujia_zixun{
