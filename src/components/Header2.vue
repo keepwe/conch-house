@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id="header2">
 		<mt-header :title="name">
 		  <router-link to="/" slot="left" @click="tap()">
 		    <mt-button><i class="iconfont icon-fanhuijiantou1"></i></mt-button>
@@ -30,7 +30,7 @@
 </script>
 
 <style>
-.mint-header{
+#header2 .mint-header{
 	margin-top: 15px;
 	padding: 0 50px;
 	background: #fff;
@@ -41,16 +41,16 @@
 	color:rgba(0,0,0,1);
 	box-sizing: border-box;
 }
-.mintui{
+#header2 .mintui{
 	font-size: 38px;
 }
-.mint-header-title{
+#header2 .mint-header-title{
 	font-size: 36px;
 }
-.mint-header-button.is-left{
+#header2 .mint-header-button.is-left{
 	margin-top: -6px;
 }	
-.icon-fanhuijiantou1{
+#header2 .icon-fanhuijiantou1{
 	font-size: 40px;
 }	
 </style>
