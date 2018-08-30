@@ -198,30 +198,129 @@
           <span>小区详情<span class="iconfont icon-fanhui"></span></span>
         </p>
         <div class="nxy_desc">
-            <div class="fl es_content">
-              <h3 class="es_title">
-                龙城花园北二区&nbsp;一室一厅
-              </h3>
-              <p class="es_desc">
-                46.19平米/南/顶层&nbsp;共四层
-              </p>
-              <div class="es_tags">
-                <span>满两年</span>
-                <span>地铁</span>
-                <span>随时可看</span>
-              </div>
-              <div class="es_price">
-                <span class="price_sum">265万</span>
-                <span class="unit_price">57,421元/平</span>
-              </div>
-            </div>
+          <div class="fl nxy_content">
+            <p class="junjia">参考均价：<span>34,572元/平</span></p>
+            <p class="niandai">
+              建筑年代：<span>1994年建</span>
+            </p>
+            <p class="lou_sum">
+              楼栋总数：<span>22栋</span>
+            </p>
+            <p class="fang_sum">
+              房屋总数：<span>3042户</span>
+            </p>
+          </div>
           <div class="fr pic">
             <img src="../../static/images/picture/esf_p3.png"/>
           </div>
-          </div>
+        </div>
+      </div>
+      <div class="tq_chengjiao">
+        <p class="bar_name">
+          <span>同小区成交（642）</span>
+          <span class="iconfont icon-fanhui"></span>
+        </p>
+        <ul>
+          <li>
+            <p>
+              <span>二室一厅/71m²/南北</span>
+              <span>423万</span>
+            </p>
+            <p>单价34523/平，2014.04.12成交</p>
+          </li>
+          <li>
+            <p>
+              <span>二室一厅/71m²/南北</span>
+              <span>423万</span>
+            </p>
+            <p>单价34523/平，2014.04.12成交</p>
+          </li>
+        </ul>
+      </div>
+    <!--同小区房源-->
+    <div class="tq_fangyuan">
+      <p class="bar_name">
+        <span>同小区房源</span>
+        <span><span class="tq_fangyuan_zs router-link-active">在售</span><span class="tq_fangyuan_cz">出租</span></span>
+      </p>
+      <div class="tq_fangyuan_item">
+        <div class="tq_fangyuan_item1">
+          <img src="../../static/images/picture/esf_house_p6.png"/>
+          <p>二室一厅/71m²/南北</p>
+          <p><span class="router-link-active">405万</span><span>59,700/平</span></p>
+        </div>
+        <div class="tq_fangyuan_item2">
+          <img src="../../static/images/picture/esf_house_p7.png"/>
+          <p>二室一厅/71m²/南北</p>
+          <p><span class="router-link-active">405万</span><span>59,700/平</span></p>
+        </div>
+      </div>
+      <div class="more">
+        <button>同小区在售23套</button>
+      </div>
+    </div>
+    <!--周边房源-->
+    <div class="zb_fangyuan">
+      <p class="bar_name">
+        <span>周边房源（8）</span>
+        <span>更多房源<span class="iconfont icon-fanhui"></span></span>
+      </p>
+      <div class="zb_fangyuan_item">
+        <div class="zb_fangyuan_item1">
+          <img src="../../static/images/picture/esf_house_p6.png"/>
+          <p>二室一厅/71m²/南北</p>
+          <p class="zb_sum_price"><span class="router-link-active">405万</span><span>59,700/平</span></p>
+        </div>
+        <div class="zb_fangyuan_item2">
+          <img src="../../static/images/picture/esf_house_p7.png"/>
+          <p>二室一厅/71m²/南北</p>
+          <p class="zb_sum_price"><span class="router-link-active">405万</span><span>59,700/平</span></p>
         </div>
       </div>
     </div>
+    <div class="zb_fangyuan">
+      <p class="bar_name">
+        <span>周边房源（8）</span>
+      </p>
+      <div class="zb_fangyuan_item">
+        <div class="zb_fangyuan_item1">
+          <img src="../../static/images/picture/esf_house_p6.png"/>
+          <p>美景东方</p>
+          <p class="zb_sum_price"><span class="router-link-active">59,700元/平</span></p>
+        </div>
+        <div class="zb_fangyuan_item2">
+          <img src="../../static/images/picture/esf_house_p7.png"/>
+          <p>松榆东里</p>
+          <p class="zb_sum_price"><span class="router-link-active">59,700元/平</span></p>
+        </div>
+      </div>
+    </div>
+      <!--买房-->
+      <div class="maifang">
+        <h2>考虑卖房？我们可以帮到你</h2>
+        <p>在线估价、委托，专属顾问卖房攻略一条龙服务</p>
+        <span>帮我卖房</span>
+      </div>
+      <!--警告举报-->
+      <div class="warning">
+        <p class="promise"><span>海螺承诺真实房源假一赔百元</span><span class="router-link-active">举报房源</span></p>
+        <p class="zhuyi">
+          房源所示“户型图、房屋用途、交易权属、建成年代、产权年限、建筑结构”仅供参考，购房时请以房本信息为准。
+        </p>
+      </div>
+      <!--联系客服-->
+      <div class="lianxi">
+        <p>
+          <img src="../../static/images/picture/esf_house_use2.png"/>
+          <span class="name">子筠</span>
+        </p>
+        <p>
+          <span class="online router-link-active">在线咨询</span>
+          <span class="phone router-link-active">电话咨询</span>
+        </p>
+      </div>
+  </div>
+  </div>
 </template>
 
 <script>
@@ -508,7 +607,7 @@
     border-bottom: 1px solid #aaa;
   }
 
-  .nxy_box .bar_name span:nth-child(2),.daikan .bar_name span:nth-child(2) {
+  .nxy_box .bar_name span:nth-child(2), .daikan .bar_name span:nth-child(2) {
     font-size: 0.22rem;
     color: #aaa;
   }
@@ -516,18 +615,169 @@
   .daikan .bar_name span:nth-child(2) span {
     margin-left: 0.3rem;
   }
-  .nxy_box{
+
+  .nxy_box {
     height: 2.55rem;
+    border-bottom: 1px solid #aaa;
   }
-  .nxy_box .bar_name{
+
+  .nxy_box .bar_name {
     display: flex;
     justify-content: space-between;
   }
-  .nxy_box .nxy_desc{
+
+  .nxy_box .nxy_desc {
     height: 1.37rem;
   }
-  .nxy_box .nxy_desc .pic img{
+
+  .nxy_box .nxy_desc .pic img {
     width: 1.9rem;
     height: 1.37rem;
+  }
+
+  .nxy_content p {
+    font-size: 0.22rem;
+    line-height: 0.35rem;
+    color: #aaa;
+  }
+
+  .nxy_content .junjia {
+    color: #000;
+    margin-bottom: 0.04rem;
+  }
+
+  .nxy_content .junjia span {
+    color: #ff9722;
+  }
+
+  .tq_chengjiao ul {
+    border-bottom: 1px solid #aaa;
+  }
+
+  .tq_chengjiao ul li {
+    list-style: initial;
+    font-size: 0.24rem;
+    margin-left: 0.24rem;
+  }
+
+  .tq_chengjiao ul li p:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.1rem;
+  }
+
+  .tq_chengjiao ul li p:nth-child(1) span:nth-child(2) {
+    color: #ff9722;
+  }
+
+  .tq_chengjiao ul li p:nth-child(2) {
+    color: #aaa;
+    margin-bottom: 0.2rem;
+  }
+
+  .tq_fangyuan .bar_name,.zb_fangyuan .bar_name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tq_fangyuan .bar_name span:nth-child(2),.zb_fangyuan .bar_name span:nth-child(2) {
+    color: #aaa;
+    font-size: 0.24rem;
+  }
+
+  .tq_fangyuan .bar_name .tq_fangyuan_zs {
+    margin-right: 0.36rem;
+  }
+
+  .tq_fangyuan .tq_fangyuan_item,.zb_fangyuan .zb_fangyuan_item{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tq_fangyuan .tq_fangyuan_item img,.zb_fangyuan .zb_fangyuan_item img{
+    width: 3.1rem;
+    height: 1.9rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .tq_fangyuan .tq_fangyuan_item p,.zb_fangyuan .zb_fangyuan_item p {
+    font-size: 0.24rem;
+    margin-bottom: 0.12rem;
+  }
+  .tq_fangyuan .tq_fangyuan_item p span,.zb_fangyuan .zb_fangyuan_item p span {
+    margin-right: 0.2rem;
+  }
+  .tq_fangyuan .more {
+    margin-top: 0.2rem;
+  }
+  .zb_fangyuan{
+    border-bottom: 1px solid #aaa;
+  }
+  .zb_fangyuan .zb_fangyuan_item .zb_sum_price{
+    margin-bottom: 0.3rem;
+  }
+  .maifang{
+    box-sizing:border-box;
+    padding: 0.37rem 0;
+    text-align: center;
+    border-bottom: 1px solid #AAA;
+  }
+  .maifang h2{
+    font-size: 0.33rem;
+    margin-bottom: 0.2rem;
+  }
+  .maifang p{
+    font-size: 0.29rem;
+    margin-bottom: 0.3rem;
+  }
+  .maifang span{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #aaa;
+    width: 1.7rem;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    font-size: 0.29rem;
+    border-radius: 0.4rem;
+  }
+  .warning{
+    border-bottom: 1px solid #aaa;
+    padding: 0.3rem 0;
+  }
+  .warning .promise{
+    display: flex;
+    justify-content: space-between;
+    color: #aaa;
+    font-size: 0.28rem;
+    margin-bottom: 0.16rem;
+  }
+  .warning .zhuyi{
+    font-size: 0.23rem;
+    color: #aaa;
+    line-height: 0.36rem;
+  }
+  .lianxi{
+    display: flex;
+    height: 0.71rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 0;
+  }
+  .lianxi img{
+    width: 0.71rem;
+    height: 0.71rem;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  .lianxi .name{
+    font-size: 0.28rem;
+    margin-left: 0.2rem;
+  }
+  .lianxi .online,.lianxi .phone{
+    font-size: 0.24rem;
+    margin-left: 0.28rem;
+    border: 1px solid #ff9722;
+    border-radius: 0.1rem;
+    padding: 0.12rem 0.2rem;
   }
 </style>
