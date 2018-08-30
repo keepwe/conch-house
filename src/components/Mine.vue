@@ -13,10 +13,11 @@
         <h2>0</h2>
         <span>我的委托</span>
       </div>
-      <div class="condition">
+      
+      <router-link to="/mydyss" tag="div" class="condition">
         <h2>0</h2>
         <span>搜索条件</span>
-      </div>
+      </router-link>
     </div>
     <div class="my_gz">
       <p class="gz_title">我关注的</p>
@@ -37,10 +38,10 @@
           <img src="../../static/images/tubiao/my_login_xq.png"/>
           <span>小区 （<em class="my_xiao_num">0</em>）</span>
         </a>
-        <a href="">
+        <router-link to="/myzx" tag="a">
           <img src="../../static/images/tubiao/my_login_zx.png"/>
           <span>装修(<em class="my_zhuang_num">0</em>)</span>
-        </a>
+        </router-link>
       </div>
       <div class="red_bao">
         <img src="../../static/images/picture/my_login_hb.png"/>
@@ -59,18 +60,18 @@
       </div>
     </div>
     <div class="my_items">
-     <div class="item">
+     <router-link to="/myjjr" tag="div" class="item">
        <p class="fl">我的经纪人</p>
        <span class="fr">
          <i class="iconfont icon-fanhui"></i>
        </span>
-     </div>
-      <div class="item">
+     </router-link>
+     <router-link to="/myyhj" tag="div" class="item">
         <p class="fl">我的租房优惠券</p>
         <span class="fr">
          <i class="iconfont icon-fanhui"></i>
        </span>
-      </div>
+     </router-link>
       <div class="item">
         <p class="fl">我的租房额度</p>
         <span class="fr">

@@ -38,7 +38,7 @@
 					<img src="../../static/images/tubiao/index_xiaoqu.png"/>
 					<span>找小区</span>
 				</router-link>
-				<router-link to="/ccj" tag="li">
+				<router-link to="/myjy" tag="li">
 					<img src="../../static/images/tubiao/index_ccj.png"/>
 					<span>查成交</span>
 				</router-link>

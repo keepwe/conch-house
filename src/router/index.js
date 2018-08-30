@@ -23,6 +23,7 @@ import MyJy from '../components/MyJy'
 import MyDyss from '../components/MyDyss'
 import MyYhj from '../components/MyYhj'
 import House from '../components/House'
+import Myzx from '../components/Myzx'
 
 Vue.use(Router);
 
@@ -120,6 +121,10 @@ export default new Router({
       path: '/house',
       component: House
     },
+    {
+      path: '/myzx',
+      component: Myzx
+		},
     {
       path: '*',
       redirect:"/home"
