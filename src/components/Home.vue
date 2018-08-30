@@ -283,6 +283,9 @@
             </div>
           </div>
         </div></router-link>
+        <div class="watch_more">
+          <button>查看全部二手房</button>
+        </div>
 			</div>
 		</div>
 		<v-footer></v-footer>
@@ -595,5 +598,17 @@
   .es_content .es_price .unit_price{
     font-size: 0.22rem;
     color: rgba(1,1,1,.5);
+  }
+  .watch_more button{
+    background: rgba(255,222,185,1);
+    width: 100%;
+    height: 0.8rem;
+    border: 0;
+    outline: none;
+    color: #ff9722;
+    border-radius: 0.1rem;
+    text-align: center;
+    line-height: 0.8rem;
+    font-size: 0.36rem;
   }
 </style>
