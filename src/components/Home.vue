@@ -4,72 +4,72 @@
 			<div class="sy_search_kuang">
 				<i class="iconfont icon-sousuo1"></i>
 				<input type="text" class="where_live"   placeholder="你想住在哪？" />
-				<img class="sy_where" src="../../static/images/tubiao/index_location.png"/>
+				<img class="sy_where" src="static/images/tubiao/index_location.png"/>
 				<span class="sy_where_diming">北京</span>
 			</div>
 		</div>
 		<div class="sy_tab">
 			<ul class="sy_tubiao">
 				<router-link to="/esf" tag="li">
-					<img src="../../static/images/tubiao/index_esf.png"/>
+					<img src="static/images/tubiao/index_esf.png"/>
 					<span>二手房</span>
 				</router-link>
 				<router-link to="/zf" tag="li">
-					<img src="../../static/images/tubiao/index_zufang.png"/>
+					<img src="static/images/tubiao/index_zufang.png"/>
 					<span>租房</span>
 				</router-link>
 				<router-link to="/xf" tag="li">
-					<img src="../../static/images/tubiao/index_newhouse.jpg"/>
+					<img src="static/images/tubiao/index_newhouse.jpg"/>
 					<span>新房</span>
 				</router-link>
 				<router-link to="/hw" tag="li">
-					<img src="../../static/images/tubiao/index_hw.png"/>
+					<img src="static/images/tubiao/index_hw.png"/>
 					<span>海外</span>
 				</router-link>
 				<router-link to="/zx" tag="li">
-					<img src="../../static/images/tubiao/index_zhuangxiu.png"/>
+					<img src="static/images/tubiao/index_zhuangxiu.png"/>
 					<span>装修</span>
 				</router-link>
 				<router-link to="/mf" tag="li">
-					<img src="../../static/images/tubiao/index_saleh.png"/>
+					<img src="static/images/tubiao/index_saleh.png"/>
 					<span>卖房</span>
 				</router-link>
 				<router-link to="/zxq" tag="li">
-					<img src="../../static/images/tubiao/index_xiaoqu.png"/>
+					<img src="static/images/tubiao/index_xiaoqu.png"/>
 					<span>找小区</span>
 				</router-link>
 				<router-link to="/myjy" tag="li">
-					<img src="../../static/images/tubiao/index_ccj.png"/>
+					<img src="static/images/tubiao/index_ccj.png"/>
 					<span>查成交</span>
 				</router-link>
 				<router-link to="/fwgj" tag="li">
-					<img src="../../static/images/tubiao/index_fwgz.png"/>
-					<span style="text-indent: -12px;">房屋估价</span>
+					<img src="static/images/tubiao/index_fwgz.png"/>
+					<span style="text-indent: -0.12rem;">房屋估价</span>
 				</router-link>
 				<router-link to="/bk" tag="li">
-					<img src="../../static/images/tubiao/index_bk.png"/>
+					<img src="static/images/tubiao/index_bk.png"/>
 					<span>百科</span>
 				</router-link>
 			</ul>
 			<ul class="sy_seehouse">
 				<li>
-					<i><img class="VR_lookhouse" src="../../static/images/tubiao/VR_lookhouse.png"/></i>
+					<i><img class="VR_lookhouse" src="static/images/tubiao/VR_lookhouse.png"/></i>
 					<span>VR看房</span>
 				</li>
 				<li>
-					<i class="con"><img class="map_findhouse" src="../../static/images/tubiao/map_findhouse.png"/></i>
+					<i class="con"><img class="map_findhouse" src="static/images/tubiao/map_findhouse.png"/></i>
 					<span>地图找房</span>
 				</li>
 				<li>
-					<i><img class="subway" src="../../static/images/tubiao/subway.png"/></i>
+					<i><img class="subway" src="static/images/tubiao/subway.png"/></i>
 					<span>近地铁</span>
 				</li>
 				<li>
-					<i class="con"><img class="man5nian" src="../../static/images/tubiao/man5nian.png"/></i>
+					<i class="con"><img class="man5nian" src="static/images/tubiao/man5nian.png"/></i>
 					<span>满五年</span>
 				</li>
 				<li>
-					<i><img class="nanbeitou" src="../../static/images/tubiao/nanbeitou.png"/></i>
+					<i><img class="nanbeitou" src="static/images/tubiao/nanbeitou.png"/></i>
 					<span>南北通透</span>
 				</li>
 			</ul>
@@ -99,11 +99,11 @@
 				</div>
 				<div class="sy_rmzt_con">
 					<div class="sy_rmzt_con_l">
-						<img id="rm_P1" src="../../static/images/picture/index_p12.png"/>
+						<img id="rm_P1" src="static/images/picture/index_p12.png"/>
 						<span>可改造的自由户型</span>
 					</div>
 					<div class="sy_rmzt_con_r">
-						<img id="rm_P2" src="../../static/images/picture/index_p14.png" alt="" />
+						<img id="rm_P2" src="static/images/picture/index_p14.png" alt="" />
 						<span>首付120万起安家</span>
 					</div>
 				</div>
@@ -114,12 +114,12 @@
 				</div>
 				<div class="sy_dncp_con">
 					<div class="sy_dncp_con_l">
-						<img id="dncp_P1" src="../../static/images/picture/index_p12.png"/>
+						<img id="dncp_P1" src="static/images/picture/index_p12.png"/>
 						<span>三环内双地铁小户型</span>
 						<i>总价200多万</i>
 					</div>
 					<div class="sy_dncp_con_r">
-						<img id="dncp_P2" src="../../static/images/picture/index_p14.png" alt="" />
+						<img id="dncp_P2" src="static/images/picture/index_p14.png" alt="" />
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
@@ -131,12 +131,12 @@
 				</div>
 				<div class="sy_dncp_con">
 					<div class="sy_dncp_con_l">
-						<img id="dncp_P1" src="../../static/images/picture/index_p12.png"/>
+						<img id="dncp_P1" src="static/images/picture/index_p12.png"/>
 						<span>三环内双地铁小户型</span>
 						<i>总价200多万</i>
 					</div>
 					<div class="sy_dncp_con_r">
-						<img id="dncp_P2" src="../../static/images/picture/index_p14.png" alt="" />
+						<img id="dncp_P2" src="static/images/picture/index_p14.png" alt="" />
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
@@ -148,12 +148,12 @@
 				</div>
 				<div class="sy_dncp_con">
 					<div class="sy_dncp_con_l">
-						<img id="dncp_P1" src="../../static/images/picture/index_p12.png"/>
+						<img id="dncp_P1" src="static/images/picture/index_p12.png"/>
 						<span>三环内双地铁小户型</span>
 						<i>总价200多万</i>
 					</div>
 					<div class="sy_dncp_con_r">
-						<img id="dncp_P2" src="../../static/images/picture/index_p14.png" alt="" />
+						<img id="dncp_P2" src="static/images/picture/index_p14.png" alt="" />
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
@@ -165,12 +165,12 @@
 				</div>
 				<div class="sy_dncp_con">
 					<div class="sy_dncp_con_l">
-						<img id="dncp_P1" src="../../static/images/picture/index_p12.png"/>
+						<img id="dncp_P1" src="static/images/picture/index_p12.png"/>
 						<span>三环内双地铁小户型</span>
 						<i>总价200多万</i>
 					</div>
 					<div class="sy_dncp_con_r">
-						<img id="dncp_P2" src="../../static/images/picture/index_p14.png" alt="" />
+						<img id="dncp_P2" src="static/images/picture/index_p14.png" alt="" />
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
@@ -182,12 +182,12 @@
 				</div>
 				<div class="sy_dncp_con">
 					<div class="sy_dncp_con_l">
-						<img id="dncp_P1" src="../../static/images/picture/index_p12.png"/>
+						<img id="dncp_P1" src="static/images/picture/index_p12.png"/>
 						<span>三环内双地铁小户型</span>
 						<i>总价200多万</i>
 					</div>
 					<div class="sy_dncp_con_r">
-						<img id="dncp_P2" src="../../static/images/picture/index_p14.png" alt="" />
+						<img id="dncp_P2" src="static/images/picture/index_p14.png" alt="" />
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
@@ -199,12 +199,12 @@
 				</div>
 				<div class="sy_dncp_con">
 					<div class="sy_dncp_con_l">
-						<img id="dncp_P1" src="../../static/images/picture/index_p12.png"/>
+						<img id="dncp_P1" src="static/images/picture/index_p12.png"/>
 						<span>三环内双地铁小户型</span>
 						<i>总价200多万</i>
 					</div>
 					<div class="sy_dncp_con_r">
-						<img id="dncp_P2" src="../../static/images/picture/index_p14.png" alt="" />
+						<img id="dncp_P2" src="static/images/picture/index_p14.png" alt="" />
 						<span>德胜门的“住”范儿</span>
 						<i>7个小区7个生活</i>
 					</div>
@@ -219,7 +219,7 @@
 				</div>
         <router-link to="/house"><div class="es_item">
           <div class="fl pic">
-            <img src="../../static/images/picture/esf_p3.png"/>
+            <img src="static/images/picture/esf_p3.png"/>
           </div>
           <div class="fl es_content">
             <h3 class="es_title">
@@ -241,7 +241,7 @@
         </div></router-link>
         <router-link to="/house"><div class="es_item">
           <div class="fl pic">
-            <img src="../../static/images/picture/esf_p3.png"/>
+            <img src="static/images/picture/esf_p3.png"/>
           </div>
           <div class="fl es_content">
             <h3 class="es_title">
@@ -263,7 +263,7 @@
         </div></router-link>
         <router-link to="/house"><div class="es_item">
           <div class="fl pic">
-            <img src="../../static/images/picture/esf_p3.png"/>
+            <img src="static/images/picture/esf_p3.png"/>
           </div>
           <div class="fl es_content">
             <h3 class="es_title">
@@ -313,7 +313,7 @@
     width:4.6rem;
     height:0.76rem;
     background:rgba(255,255,255,1);
-    border-radius:38px;
+    border-radius:0.38rem;
     box-shadow:0.04rem 0.02rem 0.1rem rgba(0,0,0,0.12);
     padding: 0.18rem 0.69rem 0.16rem;
     box-sizing: border-box;

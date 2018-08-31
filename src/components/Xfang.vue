@@ -25,23 +25,23 @@
     	<div class="xf_tb">
     		<ul class="xf_tubiao">
 				<li>
-					<img src="../../static/images/tubiao/newh_all.jpg"/>
+					<img src="static/images/tubiao/newh_all.jpg"/>
 					<span>全部楼盘</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/newh_onsale.jpg"/>
+					<img src="static/images/tubiao/newh_onsale.jpg"/>
 					<span>在售楼盘</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/newh_kaipan.jpg"/>
+					<img src="static/images/tubiao/newh_kaipan.jpg"/>
 					<span>最近开盘</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/newh_wanke.jpg"/>
+					<img src="static/images/tubiao/newh_wanke.jpg"/>
 					<span>万科好房</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/newh_help.jpg"/>
+					<img src="static/images/tubiao/newh_help.jpg"/>
 					<span>帮我找房</span>
 				</li>
 			</ul>
@@ -70,8 +70,8 @@
     			<h1>VR看房</h1>
     			<span>查看全部<i class="iconfont icon-fanhuijiantou2"></i></span>
     			<div class="VRkanf_pic">
-    				<img class="VRkanf_pic1" src="../../static/images/picture/xf_vrkanfang1.png"/>
-    				<img src="../../static/images/picture/xf_vrkanfang2.png"/>
+    				<img class="VRkanf_pic1" src="static/images/picture/xf_vrkanfang1.png"/>
+    				<img src="static/images/picture/xf_vrkanfang2.png"/>
     			</div>
     			<div class="VRkanf_tit">
     				<h2>国润村</h2>
@@ -158,7 +158,7 @@
 		      <router-link to="/house">
 		        <div class="xf_item">
 		          <div class="fl pic">
-		            <img src="../../static/images/picture/esf_p3.png"/>
+		            <img src="static/images/picture/esf_p3.png"/>
 		          </div>
 		          <div class="fl xf_content">
 		            <h3 class="es_title">
@@ -184,7 +184,7 @@
 		      <router-link to="/house">
 		        <div class="xf_item">
 		          <div class="fl pic">
-		            <img src="../../static/images/picture/esf_p3.png"/>
+		            <img src="static/images/picture/esf_p3.png"/>
 		          </div>
 		          <div class="fl xf_content">
 		            <h3 class="es_title">
@@ -210,7 +210,7 @@
 		      <router-link to="/house">
 		        <div class="xf_item">
 		          <div class="fl pic">
-		            <img src="../../static/images/picture/esf_p3.png"/>
+		            <img src="static/images/picture/esf_p3.png"/>
 		          </div>
 		          <div class="fl xf_content">
 		            <h3 class="es_title">
@@ -236,7 +236,7 @@
 		      <router-link to="/house">
 		        <div class="xf_item">
 		          <div class="fl pic">
-		            <img src="../../static/images/picture/esf_p3.png"/>
+		            <img src="static/images/picture/esf_p3.png"/>
 		          </div>
 		          <div class="fl xf_content">
 		            <h3 class="es_title">
@@ -262,7 +262,7 @@
 		      <router-link to="/house">
 		        <div class="xf_item">
 		          <div class="fl pic">
-		            <img src="../../static/images/picture/esf_p3.png"/>
+		            <img src="static/images/picture/esf_p3.png"/>
 		          </div>
 		          <div class="fl xf_content">
 		            <h3 class="es_title">
@@ -296,9 +296,9 @@
 		name:"Xfang",
 		data(){
 			return{
-				bac1:'url(../../static/images/picture/xf_banner1.png) no-repeat left top/cover',
-				bac2:'url(../../static/images/picture/xf_banner1.png) no-repeat left top/cover',
-				bac3:'url(../../static/images/picture/xf_banner1.png) no-repeat left top/cover',
+				bac1:'url(static/images/picture/xf_banner1.png) no-repeat left top/cover',
+				bac2:'url(static/images/picture/xf_banner1.png) no-repeat left top/cover',
+				bac3:'url(static/images/picture/xf_banner1.png) no-repeat left top/cover',
 			}
 		},
 		methods:{
@@ -325,7 +325,7 @@
     width:5rem;
     height:0.6rem;
     background:rgba(255,255,255,1);
-    border-radius:38px;
+    border-radius:0.38rem;
     box-shadow:0.04rem 0.02rem 0.1rem rgba(0,0,0,0.12);
     box-sizing: border-box;
 }
@@ -370,7 +370,7 @@
 	font-weight:normal;
 }
 .xf_banner{
-	padding: 11px 50px 0;
+	padding: 0.11rem 0.5rem 0;
 	box-sizing: border-box;
 }
 .xf_banner .mint-swipe .mint-swipe-indicators{
@@ -407,7 +407,7 @@
     margin: 0 auto 0.09rem;
 }
 .xf_tubiao li span{
-	height:0.24rem;
+	height:auto;
     font-size:0.24rem;
     font-weight:100;
     color:rgba(0,0,0,1);
@@ -560,7 +560,7 @@
 	font-size:0.24rem;	
 	font-weight:100;
 	color:rgba(0,0,0,0.5);
-	line-height:27px;
+	line-height:0.27rem;
 }
 .RMbd_tab_l_status{
 	width: 0.78rem;
@@ -574,7 +574,7 @@
 	height:0.8rem;
 	background:rgba(255,144,18,1);
 	border-radius:0.1rem;
-	font-size:36px;
+	font-size:0.36rem;
 	color:rgba(254,254,254,1);
 	border: 0;
 	outline: none;

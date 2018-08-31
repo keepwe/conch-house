@@ -40,6 +40,9 @@
 	font-weight:900;
 	color:rgba(0,0,0,1);	
 }
+#header4  .mint-header .mint-button{
+	height: auto;
+}
 #header4 .mintui{
 	font-size: 0.36rem;
 }

@@ -14,11 +14,11 @@
     <div class="main">
       <div class="gujia_zixun">
         <div class="gujia">
-          <img src="../../static/images/tubiao/index_fwgz.png"/>
+          <img src="static/images/tubiao/index_fwgz.png"/>
           <p>房屋估价</p>
         </div>
         <div class="zixun">
-          <img src="../../static/images/tubiao/zf_lianxi.jpg"/>
+          <img src="static/images/tubiao/zf_lianxi.jpg"/>
           <p>咨询经纪人</p>
         </div>
       </div>
@@ -31,23 +31,23 @@
         </div>
         <div class="lc_content">
           <div>
-            <img src="../../static/images/tubiao/sale_fbfy.png"/>
+            <img src="static/images/tubiao/sale_fbfy.png"/>
             <p>发布房源</p>
           </div>
           <div>
-            <img src="../../static/images/tubiao/sale_heshi.png"/>
+            <img src="static/images/tubiao/sale_heshi.png"/>
             <p>电话核实</p>
           </div>
           <div>
-            <img src="../../static/images/tubiao/sale_fwsk.png"/>
+            <img src="static/images/tubiao/sale_fwsk.png"/>
             <p>房屋实勘</p>
           </div>
           <div>
-            <img src="../../static/images/tubiao/sale_jilv.png"/>
+            <img src="static/images/tubiao/sale_jilv.png"/>
             <p>经纪人卖房</p>
           </div>
           <div>
-            <img src="../../static/images/tubiao/sale_jrmf.png"/>
+            <img src="static/images/tubiao/sale_jrmf.png"/>
             <p>成交过户</p>
           </div>
         </div>
@@ -62,17 +62,17 @@
         <div class="js_item js_xbj">
           <h2>专业经纪人团队</h2>
           <p>政策咨询，房屋定价，专业带看</p>
-          <img src="../../static/images/picture/sale_p3.png" class="sale1"/>
+          <img src="static/images/picture/sale_p3.png" class="sale1"/>
         </div>
         <div class="js_item js_xbj">
           <h2>免费房屋实勘</h2>
           <p>高清实勘拍照，展示房屋精彩一面</p>
-          <img src="../../static/images/picture/sale_p1.png" class="sale2"/>
+          <img src="static/images/picture/sale_p1.png" class="sale2"/>
         </div>
         <div class="js_item">
           <h2>丰富买家资源</h2>
           <p>全国线下14万+专业经纪人，线上千万级浏览量</p>
-          <img src="../../static/images/picture/sale_p2.png" class="sale3"/>
+          <img src="static/images/picture/sale_p2.png" class="sale3"/>
         </div>
       </div>
       <div class="fabu">
@@ -97,7 +97,7 @@
   .mf_box header{
     padding: 0 0.5rem;
     height: 4.3rem;
-    background: url("../../static/images/picture/mf_banner.jpg") -1.36rem -1.80rem no-repeat;
+    background: url("../../static/images/picture/mf_banner.jpg") -1.31rem -1.80rem/120% no-repeat;
   }
   .mf_box header .title{
     display: flex;

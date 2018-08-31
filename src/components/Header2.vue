@@ -31,26 +31,29 @@
 
 <style>
 #header2 .mint-header{
-	margin-top: 15px;
-	padding: 0 50px;
+	margin-top: 0.15rem;
+	padding: 0 0.5rem;
 	background: #fff;
-	height: 90px;
-	font-size:36px;
+	height: 0.9rem;
+	font-size:0.36rem;
 	font-family: "方正兰亭细黑_GBK";
 	font-weight:900;
 	color:rgba(0,0,0,1);
 	box-sizing: border-box;
 }
+#header2  .mint-header .mint-button{
+	height: auto;
+}
 #header2 .mintui{
-	font-size: 38px;
+	font-size: 0.38rem;
 }
 #header2 .mint-header-title{
-	font-size: 36px;
+	font-size: 0.36rem;
 }
 #header2 .mint-header-button.is-left{
-	margin-top: -6px;
+	margin-top: -0.06rem;
 }	
 #header2 .icon-fanhuijiantou1{
-	font-size: 40px;
+	font-size: 0.4rem;
 }	
 </style>

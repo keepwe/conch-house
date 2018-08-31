@@ -2,7 +2,7 @@
   <div>
     <header>
       <div class="search fl">
-        <img src="../../static/images/tubiao/fangdaj.png"/>
+        <img src="static/images/tubiao/fangdaj.png"/>
         <input type="text" placeholder="输入小区/商区/地铁站">
       </div>
       <div class="qx fr">取消</div>
@@ -10,7 +10,7 @@
     <div class="main">
       <div class="lishi list">
         <span class="fl">历史搜索</span>
-        <img src="../../static/images/tubiao/search_lajitong.png" class="fr"/>
+        <img src="static/images/tubiao/search_lajitong.png" class="fr"/>
       </div>
       <div class="list">
         <span>北京</span>
@@ -46,7 +46,7 @@
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(0, 0, 0, 1);
     opacity: 0.42;
-    border-radius: 38px;
+    border-radius: 0.38rem;
     box-shadow:  0.04rem 0 0.1rem rgba(0, 0, 0, 0.36);
     vertical-align: middle;
   }
@@ -102,3 +102,4 @@
     margin-top: 0.45rem;
   }
 </style>
+ 

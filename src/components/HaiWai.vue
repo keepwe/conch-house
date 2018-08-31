@@ -3,35 +3,35 @@
 		<v-header :name="tit"></v-header>
 		<ul class="hw_tubiao">
 			<li>
-				<img src="../../static/images/tubiao/hw_meiguo.jpg"/>
+				<img src="static/images/tubiao/hw_meiguo.jpg"/>
 				<span>美国</span>
 			</li>
 			<li>
-				<img src="../../static/images/tubiao/hw_aodaliya.png"/>
+				<img src="static/images/tubiao/hw_aodaliya.png"/>
 				<span>澳大利亚</span>
 			</li>
 			<li>
-				<img src="../../static/images/tubiao/hw_jianada.jpg"/>
+				<img src="static/images/tubiao/hw_jianada.jpg"/>
 				<span>加拿大</span>
 			</li>
 			<li>
-				<img src="../../static/images/tubiao/hw_riben.jpg"/>
+				<img src="static/images/tubiao/hw_riben.jpg"/>
 				<span>日本</span>
 			</li>
 			<li>
-				<img src="../../static/images/tubiao/hw_yingguo.jpg"/>
+				<img src="static/images/tubiao/hw_yingguo.jpg"/>
 				<span>英国</span>
 			</li>
 			<li>
-				<img src="../../static/images/tubiao/hw_taiguo.png"/>
+				<img src="static/images/tubiao/hw_taiguo.png"/>
 				<span>泰国</span>
 			</li>
 			<li>
-				<img src="../../static/images/tubiao/hw_deguo.png"/>
+				<img src="static/images/tubiao/hw_deguo.png"/>
 				<span>德国</span>
 			</li>
 			<li>
-				<img src="../../static/images/tubiao/hw_hanguo.jpg"/>
+				<img src="static/images/tubiao/hw_hanguo.jpg"/>
 				<span>韩国</span>
 			</li>
 		</ul>
@@ -75,7 +75,7 @@
 					<span>2018.8.27</span>
 				</div>
 				<div class="hw_tjitem1_r">
-					<img src="../../static/images/picture/hw_p5.png" alt="" />
+					<img src="static/images/picture/hw_p5.png" alt="" />
 				</div>
 			</div>
 			<div class="hw_tjitem1">
@@ -84,7 +84,7 @@
 					<span>2018.8.27</span>
 				</div>
 				<div class="hw_tjitem1_r">
-					<img src="../../static/images/picture/hw_p5.png" alt="" />
+					<img src="static/images/picture/hw_p5.png" alt="" />
 				</div>
 			</div>
 		</div>

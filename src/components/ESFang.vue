@@ -8,6 +8,8 @@
       </div>
       <span class="iconfont icon-xiaoxi2"></span>
     </header>
+    </header>
+    </header>
     <div class="es_search">
       <el-cascader
         :options="options2"
@@ -38,13 +40,13 @@
         @active-item-change="handleItemChange"
         :props="props"
       ></el-cascader>
-      <img src="../../static/images/tubiao/zf_sjt.png"/>
+      <img class="es_search_px" src="static/images/tubiao/zf_sjt.png"/>
     </div>
     <div class="es_items">
       <router-link to="/house">
         <div class="es_item">
           <div class="fl pic">
-            <img src="../../static/images/picture/esf_p3.png"/>
+            <img src="static/images/picture/esf_p3.png"/>
           </div>
           <div class="fl es_content">
             <h3 class="es_title">
@@ -67,7 +69,7 @@
       </router-link>
       <div class="es_item">
         <div class="fl pic">
-          <img src="../../static/images/picture/esf_p3.png"/>
+          <img src="static/images/picture/esf_p3.png"/>
         </div>
         <div class="fl es_content">
           <h3 class="es_title">
@@ -89,7 +91,7 @@
       </div>
       <div class="es_item">
         <div class="fl pic">
-          <img src="../../static/images/picture/esf_p3.png"/>
+          <img src="static/images/picture/esf_p3.png"/>
         </div>
         <div class="fl es_content">
           <h3 class="es_title">
@@ -111,7 +113,7 @@
       </div>
       <div class="es_item">
         <div class="fl pic">
-          <img src="../../static/images/picture/esf_p3.png"/>
+          <img src="static/images/picture/esf_p3.png"/>
         </div>
         <div class="fl es_content">
           <h3 class="es_title">
@@ -133,7 +135,7 @@
       </div>
       <div class="es_item">
         <div class="fl pic">
-          <img src="../../static/images/picture/esf_p3.png"/>
+          <img src="static/images/picture/esf_p3.png"/>
         </div>
         <div class="fl es_content">
           <h3 class="es_title">
@@ -155,7 +157,7 @@
       </div>
       <div class="es_item">
         <div class="fl pic">
-          <img src="../../static/images/picture/esf_p3.png"/>
+          <img src="static/images/picture/esf_p3.png"/>
         </div>
         <div class="fl es_content">
           <h3 class="es_title">
@@ -240,7 +242,7 @@ export default{
     width: 5rem;
     height: 0.6rem;
     background: rgba(255, 255, 255, 1);
-    border-radius: 38px;
+    border-radius: 0.38rem;
     box-shadow: 0.04rem 0.02rem 0.1rem rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
   }
@@ -267,12 +269,17 @@ export default{
     justify-content: space-between;
     align-items: center;
   }
-
+  .es_house .es_search .es_search_px{
+   	width: 0.2rem;
+   	height: 0.2rem;
+  }
   .es_house .es_search .el-cascader .el-input--suffix .el-input__inner {
     font-size: 0.28rem;
     border: 0 !important;
     width: 1.1rem !important;
+    height: auto;
   }
+  
   .es_house .es_search .el-cascader .el-input--suffix .el-input__inner::placeholder {
     color: #000;
   }

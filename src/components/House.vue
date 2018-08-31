@@ -32,7 +32,7 @@
           <p class="bao2">真实存在，真实销售真实价格，真实图片</p>
         </div>
         <div>
-          <img src="../../static/images/tubiao/esf_house_bao.png" height="48" width="44"/></div>
+          <img src="static/images/tubiao/esf_house_bao.png" height="48" width="44"/></div>
       </div>
       <div class="vr">
         <div>
@@ -100,7 +100,7 @@
         <p class="bar_name">推荐经纪人</p>
         <div class="agent_item">
           <div class="agent_pic fl">
-            <img src="../../static/images/picture/esf_house_use3.png"/>
+            <img src="static/images/picture/esf_house_use3.png"/>
           </div>
           <div class="agent_content fl">
             <p class="agent_name">王磊</p>
@@ -108,12 +108,12 @@
             <p class="agent_desc">本房信息由我维护，有变化最快得知</p>
           </div>
           <div class="agent_contact fl">
-            <img src="../../static/images/tubiao/esf_house_message1.png" class="message"/>
-            <img src="../../static/images/tubiao/esf_house_tell.png" class="tell"/></div>
+            <img src="static/images/tubiao/esf_house_message1.png" class="message"/>
+            <img src="static/images/tubiao/esf_house_tell.png" class="tell"/></div>
         </div>
         <div class="agent_item">
           <div class="agent_pic fl">
-            <img src="../../static/images/picture/esf_house_use1.png"/>
+            <img src="static/images/picture/esf_house_use1.png"/>
           </div>
           <div class="agent_content fl">
             <p class="agent_name">王磊</p>
@@ -121,12 +121,12 @@
             <p class="agent_desc">本房信息由我维护，有变化最快得知</p>
           </div>
           <div class="agent_contact fl">
-            <img src="../../static/images/tubiao/esf_house_message1.png" class="message"/>
-            <img src="../../static/images/tubiao/esf_house_tell.png" class="tell"/></div>
+            <img src="static/images/tubiao/esf_house_message1.png" class="message"/>
+            <img src="static/images/tubiao/esf_house_tell.png" class="tell"/></div>
         </div>
         <div class="agent_item">
           <div class="agent_pic fl">
-            <img src="../../static/images/picture/esf_house_use2.png"/>
+            <img src="static/images/picture/esf_house_use2.png"/>
           </div>
           <div class="agent_content fl">
             <p class="agent_name">王磊</p>
@@ -134,8 +134,8 @@
             <p class="agent_desc">本房信息由我维护，有变化最快得知</p>
           </div>
           <div class="agent_contact fl">
-            <img src="../../static/images/tubiao/esf_house_message1.png" class="message"/>
-            <img src="../../static/images/tubiao/esf_house_tell.png" class="tell"/></div>
+            <img src="static/images/tubiao/esf_house_message1.png" class="message"/>
+            <img src="static/images/tubiao/esf_house_tell.png" class="tell"/></div>
         </div>
       </div>
       <!--户型格局-->
@@ -211,7 +211,7 @@
             </p>
           </div>
           <div class="fr pic">
-            <img src="../../static/images/picture/esf_p3.png"/>
+            <img src="static/images/picture/esf_p3.png"/>
           </div>
         </div>
       </div>
@@ -245,12 +245,12 @@
       </p>
       <div class="tq_fangyuan_item">
         <div class="tq_fangyuan_item1">
-          <img src="../../static/images/picture/esf_house_p6.png"/>
+          <img src="static/images/picture/esf_house_p6.png"/>
           <p>二室一厅/71m²/南北</p>
           <p><span class="router-link-active">405万</span><span>59,700/平</span></p>
         </div>
         <div class="tq_fangyuan_item2">
-          <img src="../../static/images/picture/esf_house_p7.png"/>
+          <img src="static/images/picture/esf_house_p7.png"/>
           <p>二室一厅/71m²/南北</p>
           <p><span class="router-link-active">405万</span><span>59,700/平</span></p>
         </div>
@@ -267,12 +267,12 @@
       </p>
       <div class="zb_fangyuan_item">
         <div class="zb_fangyuan_item1">
-          <img src="../../static/images/picture/esf_house_p6.png"/>
+          <img src="static/images/picture/esf_house_p6.png"/>
           <p>二室一厅/71m²/南北</p>
           <p class="zb_sum_price"><span class="router-link-active">405万</span><span>59,700/平</span></p>
         </div>
         <div class="zb_fangyuan_item2">
-          <img src="../../static/images/picture/esf_house_p7.png"/>
+          <img src="static/images/picture/esf_house_p7.png"/>
           <p>二室一厅/71m²/南北</p>
           <p class="zb_sum_price"><span class="router-link-active">405万</span><span>59,700/平</span></p>
         </div>
@@ -284,12 +284,12 @@
       </p>
       <div class="zb_fangyuan_item">
         <div class="zb_fangyuan_item1">
-          <img src="../../static/images/picture/esf_house_p6.png"/>
+          <img src="static/images/picture/esf_house_p6.png"/>
           <p>美景东方</p>
           <p class="zb_sum_price"><span class="router-link-active">59,700元/平</span></p>
         </div>
         <div class="zb_fangyuan_item2">
-          <img src="../../static/images/picture/esf_house_p7.png"/>
+          <img src="static/images/picture/esf_house_p7.png"/>
           <p>松榆东里</p>
           <p class="zb_sum_price"><span class="router-link-active">59,700元/平</span></p>
         </div>
@@ -311,7 +311,7 @@
       <!--联系客服-->
       <div class="lianxi">
         <p>
-          <img src="../../static/images/picture/esf_house_use2.png"/>
+          <img src="static/images/picture/esf_house_use2.png"/>
           <span class="name">子筠</span>
         </p>
         <p>
@@ -501,7 +501,7 @@
     color: #fff;
     font-size: 0.28rem;
     font-family: "方正兰亭纤黑_GBK";
-    letter-spacing: 4px;
+    letter-spacing: 0.04rem;
     background: #ff9722;
     border-radius: 0.1rem;
     border: 0;

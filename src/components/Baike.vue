@@ -4,22 +4,22 @@
 		<div class="bk_tabsx">
 			<ul class="bk_tabsx_tubiao">
 				<li class="bk_esf">
-					<img src="../../static/images/tubiao/baike_house.png"/>
+					<img src="static/images/tubiao/baike_house.png"/>
 				</li>
 				<li class="bk_xf">
-					<img src="../../static/images/tubiao/baike圆角矩形 1.png"/>
+					<img src="static/images/tubiao/baike圆角矩形 1.png"/>
 				</li>
 				<li class="bk_mf">
-					<img src="../../static/images/tubiao/baike_sale.png"/>
+					<img src="static/images/tubiao/baike_sale.png"/>
 				</li>
 				<li class="bk_hf">
-					<img src="../../static/images/tubiao/baike_jiantou.png"/>
+					<img src="static/images/tubiao/baike_jiantou.png"/>
 				</li>
 				<li class="bk_zf">
-					<img src="../../static/images/tubiao/baike_zuf.png"/>
+					<img src="static/images/tubiao/baike_zuf.png"/>
 				</li>
 				<li class="bk_qb">
-					<img src="../../static/images/tubiao/baike_zu.png"/>
+					<img src="static/images/tubiao/baike_zu.png"/>
 				</li>
 			</ul>
 			<ul class="bk_tabsx_wenzi">
@@ -93,7 +93,7 @@
 	height: 0.46rem;
 }
 .bk_xf img{
-	width: 0.8rem;
+	width: 0.47rem;
 	height: 0.46rem;
 }
 .bk_mf img{
@@ -115,7 +115,8 @@
 .bk_tabsx_wenzi{
 	display: flex;
 	justify-content: space-between;
-	padding: 0 0.2rem;
+	padding: 0 0.3rem;
+    margin-left: -0.15rem;
 }
 .bk_tabsx_wenzi li{
 	text-align: center;

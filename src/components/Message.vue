@@ -3,7 +3,7 @@
 		<header>消息</header>
     <div class="msg_list">
       <div class="fl">
-        <img src="../../static/images/picture/hw_p1.png"/>
+        <img src="static/images/picture/hw_p1.png"/>
       </div>
       <div class="fr">
         <span class="iconfont icon-fanhui"></span>

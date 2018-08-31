@@ -23,28 +23,28 @@
       <p class="gz_title">我关注的</p>
       <div class="my_gz_list">
         <a href="">
-          <img src="../../static/images/tubiao/my_login_esf.png"/>
+          <img src="static/images/tubiao/my_login_esf.png"/>
           <span>二手房 （<em class="my_ershou_num">0</em>）</span>
         </a>
         <a href="">
-          <img src="../../static/images/tubiao/my_login_xf.png"/>
+          <img src="static/images/tubiao/my_login_xf.png"/>
           <span>新房 （<em class="my_xin_num">0</em>）</span>
         </a>
         <a href="">
-          <img src="../../static/images/tubiao/my_login_zf.png"/>
+          <img src="static/images/tubiao/my_login_zf.png"/>
           <span>租房 （<em class="my_zu_num">0</em>）</span>
         </a>
         <a href="">
-          <img src="../../static/images/tubiao/my_login_xq.png"/>
+          <img src="static/images/tubiao/my_login_xq.png"/>
           <span>小区 （<em class="my_xiao_num">0</em>）</span>
         </a>
         <router-link to="/myzx" tag="a">
-          <img src="../../static/images/tubiao/my_login_zx.png"/>
+          <img src="static/images/tubiao/my_login_zx.png"/>
           <span>装修(<em class="my_zhuang_num">0</em>)</span>
         </router-link>
       </div>
       <div class="red_bao">
-        <img src="../../static/images/picture/my_login_hb.png"/>
+        <img src="static/images/picture/my_login_hb.png"/>
       </div>
     </div>
     <div class="my_house">

@@ -46,12 +46,12 @@
 
 <style scoped="">
 .forgetp_con{
-	padding: 0 50px;
-	margin-top: 156px;
+	padding: 0 0.5rem;
+	margin-top: 1.56rem;
 }
 .forgetp_con_user,.forgetp_con_pass,.forgetp_con_yzm{
-	height: 103px;
-	line-height: 130px;
+	height: 1.03rem;
+	line-height: 1.3rem;
 	border-bottom-width: thin;
 	border-bottom-style: solid;
 	border-bottom-color: rgba(0,0,0,0.8);
@@ -60,30 +60,30 @@
 	width: 80%;
 	border: 0;
 	outline: none;
-	font-size:28px;
+	font-size:0.28rem;
 	font-weight:normal;
-	padding-left: 6px;
+	padding-left: 0.06rem;
 	box-sizing: border-box;
 }
 .getyzm{
-	height:28px;
-	font-size:28px;
+	height:0.28rem;
+	font-size:0.28rem;
 	font-weight:normal;
 	color:rgba(0,0,0,0.5);
 	margin-left: -8%;
 }
 .re_agree{
-	margin-top: 32px;
-	padding: 0 60px;
+	margin-top: 0.32rem;
+	padding: 0 0.6rem;
 	box-sizing: border-box;
-	font-size: 24px;
+	font-size: 0.24rem;
 	color:rgba(0,0,0,0.2);;
 }
 .re_agree input{
-	width: 24px;
-	height: 24px;
+	width: 0.24rem;
+	height: 0.24rem;
 	background:rgba(0,0,0,0.28);
-	border-radius:8px;
+	border-radius:0.08rem;
 	float: left;
 	width: 10%;
 }
@@ -93,13 +93,13 @@
 	width: 80%;
 }
 #re_commit{
-	margin-top: 40px;
+	margin-top: 0.4rem;
 	width: 100%;
-	height:94px;
+	height:0.94rem;
 	border: 0;
 	background:rgba(255,144,18,1);
-	border-radius:47px;
-	font-size: 36px;
+	border-radius:0.47rem;
+	font-size: 0.36rem;
 	color: #fff;
 	outline: none;
 }

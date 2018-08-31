@@ -12,12 +12,12 @@
       </div>
       <div class="gujia_input">
         <div class="name">
-          <img src="../../static/images/tubiao/my_fwgj_z1.png" width="30" height="38"/>
+          <img src="static/images/tubiao/my_fwgj_z1.png" width="30" height="38"/>
           <input type="text" placeholder="输入小区名称">
           <span class="iconfont icon-fanhui"></span>
         </div>
         <div class="menpai">
-          <img src="../../static/images/tubiao/my_fwgj_z2.png" width="30" height="20"/>
+          <img src="static/images/tubiao/my_fwgj_z2.png" width="30" height="20"/>
           <input type="text" placeholder="选择楼栋门牌">
           <span class="iconfont icon-fanhui"></span>
         </div>
@@ -32,7 +32,7 @@
           <p></p>
         </div>
         <div class="gujia_icon">
-          <img src="../../static/images/tubiao/my_fwgj_z3.png"/>
+          <img src="static/images/tubiao/my_fwgj_z3.png"/>
         </div>
         <p>输入信息估价</p>
       </div>

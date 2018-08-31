@@ -26,35 +26,35 @@
     	<div class="zu_tb">
     		<ul class="zf_tubiao">
 				<li>
-					<img src="../../static/images/tubiao/zf_zhengzu.jpg"/>
+					<img src="static/images/tubiao/zf_zhengzu.jpg"/>
 					<span>整租</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/zf_hezu.jpg"/>
+					<img src="static/images/tubiao/zf_hezu.jpg"/>
 					<span>合租</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/zf_dfgy.jpg"/>
+					<img src="static/images/tubiao/zf_dfgy.jpg"/>
 					<span>独栋公寓</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/zf_0yuanlive.jpg"/>
+					<img src="static/images/tubiao/zf_0yuanlive.jpg"/>
 					<span>0元住</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/zf_yuezu.jpg"/>
+					<img src="static/images/tubiao/zf_yuezu.jpg"/>
 					<span>月租</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/zf_maphelp.jpg"/>
+					<img src="static/images/tubiao/zf_maphelp.jpg"/>
 					<span>地图找房</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/zf_chuzu.jpg"/>
+					<img src="static/images/tubiao/zf_chuzu.jpg"/>
 					<span>我要出租</span>
 				</li>
 				<li>
-					<img src="../../static/images/tubiao/zf_lianxi.jpg"/>
+					<img src="static/images/tubiao/zf_lianxi.jpg"/>
 					<span>联系我们</span>
 				</li>
 			</ul>
@@ -91,7 +91,7 @@
 		        @active-item-change="handleItemChange"
 		        :props="props"
 		      ></el-cascader>
-		      <img src="../../static/images/tubiao/zf_sjt.png"/>
+		      <img class="es_search_px" src="static/images/tubiao/zf_sjt.png"/>
 			</div>
 		</div>
 		<div class="zu_all_houseitem">
@@ -99,7 +99,7 @@
 		      <router-link to="/house">
 		        <div class="zf_item">
 		          <div class="fl pic">
-		            <img src="../../static/images/picture/esf_p3.png"/>
+		            <img src="static/images/picture/esf_p3.png"/>
 		          </div>
 		          <div class="fl es_content">
 		            <h3 class="es_title">
@@ -125,7 +125,7 @@
 		      <router-link to="/house">
 		        <div class="zf_item">
 		          <div class="fl pic">
-		            <img src="../../static/images/picture/esf_p3.png"/>
+		            <img src="static/images/picture/esf_p3.png"/>
 		          </div>
 		          <div class="fl es_content">
 		            <h3 class="es_title">
@@ -151,7 +151,7 @@
 		      <router-link to="/house">
 		        <div class="zf_item">
 		          <div class="fl pic">
-		            <img src="../../static/images/picture/esf_p3.png"/>
+		            <img src="static/images/picture/esf_p3.png"/>
 		          </div>
 		          <div class="fl es_content">
 		            <h3 class="es_title">
@@ -183,9 +183,9 @@
 		name:"Zfang",
 		data(){
 			return{
-				bac1:'url(../../static/images/picture/zf_p1.png) no-repeat left top/cover',
-				bac2:'url(../../static/images/picture/zf_p2.png) no-repeat left top/cover',
-				bac3:'url(../../static/images/picture/zf_p3.png) no-repeat left top/cover',
+				bac1:'url(static/images/picture/zf_p1.png) no-repeat left top/cover',
+				bac2:'url(static/images/picture/zf_p2.png) no-repeat left top/cover',
+				bac3:'url(static/images/picture/zf_p3.png) no-repeat left top/cover',
 				options2: [{
 		          label: '江苏',
 		          cities: []
@@ -236,7 +236,7 @@
     width:5rem;
     height:0.6rem;
     background:rgba(255,255,255,1);
-    border-radius:38px;
+    border-radius:0.38rem;
     box-shadow:0.04rem 0.02rem 0.1rem rgba(0,0,0,0.12);
     box-sizing: border-box;
 }
@@ -260,6 +260,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.zu_house .es_search .es_search_px{
+   	width: 0.2rem;
+   	height: 0.2rem;
+  }
 .zu_banner{
 	padding: 0.20rem 0.5rem;
 	box-sizing: border-box;
@@ -342,6 +346,7 @@
     font-size: 0.28rem;
     border: 0 !important;
     width: 1.1rem !important;
+    height: auto;
 }
 .zu_all_house .es_search .el-cascader .el-input--suffix .el-input__inner::placeholder {
     color: #000;

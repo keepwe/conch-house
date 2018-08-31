@@ -43,6 +43,9 @@
 	color:rgba(0,0,0,1);
 	padding: 0;	
 }
+#header3  .mint-header .mint-button{
+	height: auto;
+}
 #header3 .mintui{
 	font-size: 0.38rem;
 }

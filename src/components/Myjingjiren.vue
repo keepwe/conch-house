@@ -11,7 +11,7 @@
 				</div>
 			</div>
 			<div class="myjjr_con_wu">
-				<img src="../../static/images/tubiao/undefined.png"/>
+				<img src="static/images/tubiao/undefined.png"/>
 				<p>你还没有经纪人</p>
 			</div>
 		</div>
@@ -34,6 +34,57 @@
 </script>
 
 <style>
+#myjjr{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.myjjr_con{
+	flex: 1;
+	background: rgba(0,0,0,0.05);
+	padding: 0 0.5rem;
+	box-sizing: border-box;
+}
+.myjjr_con_tab{
+	height: 0.76rem;
+	border-bottom-width: 0.01rem;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(0,0,0,0.1);
+	padding: 0.17rem 0;
+	box-sizing: border-box;
+}
+.myjjr_con_tab_l,.myjjr_con_tab_r{
+	width: 49.4%;
+	float: left;
+	font-size: 0.32rem;
+	text-align: center;
+}
+.myjjr_con_tab_l{
+	border-right-width: 0.01rem;
+	border-right-style: solid;
+	border-right-color: rgba(0,0,0,0.1);
+}
+.mjjr_active{
+	color: #FF9114;
+}
+.myjjr_con_wu{
+	margin-top: 1.54rem;
+	text-align: center;	
+}
+.myjjr_con_wu img{
+	width:2.22rem;
+	height:2.77rem;
+}
+.myjjr_con_wu p{
+	margin-top: 0.15rem;
+	height:0.31rem;
+	font-size:0.32rem;
+	font-weight:100;
+	color:rgba(0,0,0,1);
+	line-height:0.3rem;
+	opacity:0.5;
+}
+</style>
 #myjjr{
 	height: 100%;
 	display: flex;

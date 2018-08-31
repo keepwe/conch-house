@@ -32,21 +32,21 @@
 	    </div>
 	    <div class="zx_list_item">
 	    	<h2>
-	    		<img src="../../static/images/picture/zx_p7.png" alt="" />
+	    		<img src="static/images/picture/zx_p7.png" alt="" />
 	    		<span>在家ZAIJLA</span>
 	    	</h2>
 	    	<div class="zx_list_item_pic">
-	    		<img src="../../static/images/picture/zx_p9.png"/>
+	    		<img src="static/images/picture/zx_p9.png"/>
 	    	</div>
 	    	<div class="zx_list_item_link">
 	    		<p>和公婆一起住，小夫妻如何玩浪漫，请戳</p>
 	    		<div class="zx_list_item_link_hd">
 	    			<div class="zx_list_item_link_dz">
-		    			<img src="../../static/images/tubiao/zx_dz.png"/>
+		    			<img src="static/images/tubiao/zx_dz.png"/>
 		    			<span>4</span>
 		    		</div>
 		    		<div class="zx_list_item_link_gz">
-		    			<img src="../../static/images/tubiao/zx_gz.png"/>
+		    			<img src="static/images/tubiao/zx_gz.png"/>
 		    			<span>15</span>
 		    		</div>
 	    		</div>
@@ -54,21 +54,21 @@
 	    </div>
 	    <div class="zx_list_item">
 	    	<h2>
-	    		<img src="../../static/images/picture/zx_p1.png" alt="" />
+	    		<img src="static/images/picture/zx_p1.png" alt="" />
 	    		<span>月球家居</span>
 	    	</h2>
 	    	<div class="zx_list_item_pic">
-	    		<img src="../../static/images/picture/zx_p8.png"/>
+	    		<img src="static/images/picture/zx_p8.png"/>
 	    	</div>
 	    	<div class="zx_list_item_link">
 	    		<p>和公婆一起住，小夫妻如何玩浪漫，请戳</p>
 	    		<div class="zx_list_item_link_hd">
 	    			<div class="zx_list_item_link_dz">
-		    			<img src="../../static/images/tubiao/zx_dz.png"/>
+		    			<img src="static/images/tubiao/zx_dz.png"/>
 		    			<span>4</span>
 		    		</div>
 		    		<div class="zx_list_item_link_gz">
-		    			<img src="../../static/images/tubiao/zx_gz.png"/>
+		    			<img src="static/images/tubiao/zx_gz.png"/>
 		    			<span>15</span>
 		    		</div>
 	    		</div>
