@@ -31,10 +31,12 @@
           <span>不清楚门牌号？</span>
           <p></p>
         </div>
-        <div class="gujia_icon">
-          <img src="static/images/tubiao/my_fwgj_z3.png"/>
-        </div>
-        <p>输入信息估价</p>
+        <router-link to="/fwgjDetail">
+          <div class="gujia_icon">
+            <img src="static/images/tubiao/my_fwgj_z3.png"/>
+          </div>
+          <p>输入信息估价</p>
+        </router-link>
       </div>
     </div>
   </div>
@@ -166,10 +168,12 @@
     font-size: 0.23rem;
     color: #797979;
   }
-  .footer{
+
+  .footer {
     margin-top: 2.8rem;
   }
-  .footer .gujia_icon{
+
+  .footer .gujia_icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,11 +183,13 @@
     border-radius: 50%;
     margin: 0.4rem auto 0;
   }
-  .footer .gujia_icon img{
+
+  .footer .gujia_icon img {
     width: 0.26rem;
     height: 0.32rem;
   }
-  .footer p{
+
+  .footer p {
     text-align: center;
     font-size: 0.26rem;
     margin-top: 0.12rem;

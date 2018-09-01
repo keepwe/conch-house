@@ -26,6 +26,12 @@ import House from '../components/House'
 import Myzx from '../components/Myzx'
 import Fbfy from '../components/Fbfy'
 import Ssuo from '../components/Ssuo'
+import FwgujiaDetail from '../components/FwgujiaDetail'
+import AddHouse from '../components/AddHouse'
+import SetUp from '../components/SetUp'
+import MyEntrust from '../components/MyEntrust'
+import FbfyMf from '../components/FbfyMf'
+import MsgSet from '../components/MsgSet'
 
 Vue.use(Router);
 
@@ -134,6 +140,30 @@ export default new Router({
     {
       path: '/fbfy',
       component: Fbfy
+    },
+    {
+      path: '/fwgjDetail',
+      component: FwgujiaDetail
+    },
+    {
+      path: '/addHouse',
+      component: AddHouse
+    },
+    {
+      path: '/setUp',
+      component: SetUp
+    },
+    {
+      path: '/myEntrust',
+      component: MyEntrust
+    },
+    {
+      path: '/fbfyMf',
+      component: FbfyMf
+    },
+    {
+      path: '/msgSet',
+      component: MsgSet
     },
     {
       path: '*',

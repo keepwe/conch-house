@@ -3,22 +3,22 @@
     <header>
       <p class="title">
         <span class="iconfont icon-navbankicon" @click="goback()"></span>
-        <span>发布租赁房源（<span class="fbfy_map">北京</span>）</span>
+        <span>免费发布房源（<span class="fbfy_map">北京</span>）</span>
         <span><img src="static/images/tubiao/my_mywt_qcz_xx.png"/></span>
       </p>
     </header>
     <div class="fbfy_house_xinxi">
       <p class="bar_name">
-        <span>所在小区</span>
+        <span>小区名称</span>
         <span class="iconfont icon-fanhui"></span>
       </p>
       <p class="bar_name">
-        <span>房屋地址</span>
+        <span>具体地址</span>
         <span class="iconfont icon-fanhui"></span>
       </p>
       <p class="bar_name">
-        <span>期望租金</span>
-        <span>您期望的房租金</span>
+        <span>期望售价</span>
+        <input type="text" placeholder="请输入期望售价">
       </p>
     </div>
     <div class="fbfy_my_xinxi">
@@ -65,7 +65,7 @@
       </div>
       <div class="fabu">
         <router-link to="">
-          <button>立即发布</button>
+          <button>确认发布</button>
         </router-link>
       </div>
     </div>
@@ -73,14 +73,14 @@
 </template>
 
 <script>
-  export default {
-    name: "Fbfy",
-    methods: {
-      goback() {
-        this.$router.back(-1);
+    export default {
+        name: "FbfyMf",
+      methods: {
+        goback() {
+          this.$router.back(-1);
+        }
       }
     }
-  }
 </script>
 
 <style scoped>
@@ -117,6 +117,17 @@
     font-size: 0.28rem;
     line-height: 0.74rem;
     border-bottom: 1px solid #e5e5e5;
+  }
+  .bar_name input{
+    height: 0.7rem;
+    line-height: 0.7rem;
+    border: 0;
+    outline: none;
+    text-align: right;
+    font-size: 0.28rem;
+  }
+  .bar_name input::placeholder{
+    color: #aaa;
   }
   .bar_name span:nth-child(2){
     color: #aaa;

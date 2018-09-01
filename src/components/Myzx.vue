@@ -58,7 +58,7 @@
 }
 .myzx_con_wu{
 	margin-top: 1.54rem;
-	text-align: center;	
+	text-align: center;
 }
 .myzx_con_wu img{
 	width:2.22rem;
@@ -71,46 +71,6 @@
 	font-weight:100;
 	color:rgba(0,0,0,1);
 	line-height:0.3rem;
-	opacity:0.5;
-}
-</style>
-#myzx{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-}
-.myzx_con{
-	flex: 1;
-	background: rgba(0,0,0,0.05);
-	padding: 0 50px;
-	box-sizing: border-box;
-}
-.myzx_con_tab{
-	height: 76px;
-	padding: 17px 0;
-	box-sizing: border-box;
-}
-.myzx_con_tab_l,.myzx_con_tab_r{
-	width: 49.4%;
-	float: left;
-	font-size: 32px;
-	text-align: center;
-}
-.myzx_con_wu{
-	margin-top: 154px;
-	text-align: center;	
-}
-.myzx_con_wu img{
-	width:222px;
-	height:277px;
-}
-.myzx_con_wu p{
-	margin-top: 15px;
-	height:31px;
-	font-size:32px;
-	font-weight:100;
-	color:rgba(0,0,0,1);
-	line-height:30px;
 	opacity:0.5;
 }
 </style>
