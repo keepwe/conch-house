@@ -1,25 +1,26 @@
 <template>
 	<div id="Ss">
 		<header>
-			<router-link to="/esf" tag="span">二手房</router-link>
-			<router-link to="/esf" tag="span">新房</router-link>
-			<router-link to="/esf" tag="span">租房</router-link>
+			<router-link to="/ssesf" tag="span">二手房</router-link>
+			<router-link to="/ssxf" tag="span">新房</router-link>
+			<router-link to="/sszf" tag="span">租房</router-link>
 		</header>
 		<div class="ss_search_kuang">
 	        <i class="iconfont icon-sousuo1"></i>
 	        <input type="text" placeholder="你想住在哪？"/>
 	    </div>
 	    <router-view></router-view>
+	    <v-footer></v-footer>
 	</div>
 </template>
 
 <script>
+	import Footer from "./Footer"
 	export default{
 		name:"Ssuo",
 		components:{
-			name:"ss_esf"
+			"v-footer":Footer
 		}
-		
 	}
 </script>
 
@@ -29,11 +30,14 @@
 	height:0.48rem;
 	font-size:0.4rem;
 	font-family:PingFangSC-Light;
-	font-weight:bold;
-	color:rgba(0,0,0,1);
-	opacity:0.5;
+	font-weight:600;
+	color:rgba(0,0,0,0.5);
+	opacity:0.7;
 	display: flex;
 	justify-content: space-between;
+}
+#Ss .router-link-active{
+	color:rgba(0,0,0,1);
 }
 #Ss .ss_search_kuang{
     height: 0.6rem;
@@ -42,7 +46,7 @@
     box-shadow: 0.04rem 0.02rem 0.1rem rgba(0, 0, 0, 0.36);
     margin: 0 0.46rem 0.02rem 0.54rem;
     box-sizing: border-box;
-  }
+}
 
 #Ss .ss_search_kuang i{
     margin: 0 0.33rem 0 0.37rem;
@@ -54,7 +58,7 @@
     height: 0.54rem;
     line-height: 0.54rem;
     border: 0;
-    font-size: 0.3rem;
+    font-size: 0.24rem;
     font-weight: 100;
     color: rgba(0, 0, 0, 1);
     opacity: 0.5;

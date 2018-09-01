@@ -25,6 +25,9 @@ import MyYhj from '../components/MyYhj'
 import House from '../components/House'
 import Myzx from '../components/Myzx'
 import Ssuo from '../components/Ssuo'
+import Ssesf from '../components/Ssesf'
+import Ssxf from '../components/Ssxf'
+import Sszf from '../components/Sszf'
 
 Vue.use(Router);
 
@@ -128,7 +131,13 @@ export default new Router({
 		},
 		{
       path: '/sousuo',
-      component: Ssuo
+      component: Ssuo,
+      children:[
+      	{path:"/ssesf",name:"Ssesf",component:Ssesf},
+      	{path:"/ssxf",name:"Ssxf",component:Ssxf},
+      	{path:"/sszf",name:"Sszf",component:Sszf},
+      	{path:"/sousuo",redirect:"/ssesf"},
+      ]
 		},
     {
       path: '*',
