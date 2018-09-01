@@ -24,10 +24,17 @@ import MyDyss from '../components/MyDyss'
 import MyYhj from '../components/MyYhj'
 import House from '../components/House'
 import Myzx from '../components/Myzx'
+import Fbfy from '../components/Fbfy'
 import Ssuo from '../components/Ssuo'
 import Ssesf from '../components/Ssesf'
 import Ssxf from '../components/Ssxf'
 import Sszf from '../components/Sszf'
+import FwgujiaDetail from '../components/FwgujiaDetail'
+import AddHouse from '../components/AddHouse'
+import SetUp from '../components/SetUp'
+import MyEntrust from '../components/MyEntrust'
+import FbfyMf from '../components/FbfyMf'
+import MsgSet from '../components/MsgSet'
 
 Vue.use(Router);
 
@@ -139,6 +146,34 @@ export default new Router({
       	{path:"/sousuo",redirect:"/ssesf"},
       ]
 		},
+    {
+      path: '/fbfy',
+      component: Fbfy
+    },
+    {
+      path: '/fwgjDetail',
+      component: FwgujiaDetail
+    },
+    {
+      path: '/addHouse',
+      component: AddHouse
+    },
+    {
+      path: '/setUp',
+      component: SetUp
+    },
+    {
+      path: '/myEntrust',
+      component: MyEntrust
+    },
+    {
+      path: '/fbfyMf',
+      component: FbfyMf
+    },
+    {
+      path: '/msgSet',
+      component: MsgSet
+    },
     {
       path: '*',
       redirect:"/home"
