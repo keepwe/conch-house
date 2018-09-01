@@ -24,6 +24,7 @@ import MyDyss from '../components/MyDyss'
 import MyYhj from '../components/MyYhj'
 import House from '../components/House'
 import Myzx from '../components/Myzx'
+import Fbfy from '../components/Fbfy'
 
 Vue.use(Router);
 
@@ -125,6 +126,10 @@ export default new Router({
       path: '/myzx',
       component: Myzx
 		},
+    {
+      path: '/fbfy',
+      component: Fbfy
+    },
     {
       path: '*',
       redirect:"/home"

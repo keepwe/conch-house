@@ -1,6 +1,6 @@
 <template>
-	<div class="mf_box">
-		<header>
+  <div class="mf_box">
+    <header>
       <p class="title">
         <span class="iconfont icon-navbankicon" @click="goback()"></span>
         <span>卖房</span>
@@ -13,10 +13,12 @@
     </header>
     <div class="main">
       <div class="gujia_zixun">
-        <div class="gujia">
-          <img src="static/images/tubiao/index_fwgz.png"/>
-          <p>房屋估价</p>
-        </div>
+        <router-link to="/fwgj">
+          <div class="gujia">
+            <img src="static/images/tubiao/index_fwgz.png"/>
+            <p>房屋估价</p>
+          </div>
+        </router-link>
         <div class="zixun">
           <img src="static/images/tubiao/zf_lianxi.jpg"/>
           <p>咨询经纪人</p>
@@ -76,30 +78,33 @@
         </div>
       </div>
       <div class="fabu">
-        <button>发布房源</button>
+        <router-link to="/fbfy">
+          <button>发布房源</button>
+        </router-link>
       </div>
     </div>
-	</div>
+  </div>
 </template>
 
 <script>
-	export default{
-		name:"Mfang",
-    methods:{
-		  goback(){
-		    this.$router.back(-1);
+  export default {
+    name: "Mfang",
+    methods: {
+      goback() {
+        this.$router.back(-1);
       }
     }
-	}
+  }
 </script>
 
 <style scoped>
-  .mf_box header{
+  .mf_box header {
     padding: 0 0.5rem;
     height: 4.3rem;
     background: url("../../static/images/picture/mf_banner.jpg") -1.31rem -1.80rem/120% no-repeat;
   }
-  .mf_box header .title{
+
+  .mf_box header .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,121 +112,148 @@
     font-size: 0.34rem;
     color: #fff;
   }
-  .mf_box header .title span:nth-child(1){
+
+  .mf_box header .title span:nth-child(1) {
     width: 23%;
   }
-  .mf_box header div{
+
+  .mf_box header div {
     color: #fff;
     text-align: center;
 
   }
-  .mf_box header div h2{
+
+  .mf_box header div h2 {
     margin-top: 0.6rem;
     font-size: 0.4rem;
   }
-  .mf_box header div p{
+
+  .mf_box header div p {
     font-size: 0.24rem;
     margin-top: 0.1rem;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
   }
-  .gujia_zixun,.liucheng,.fabu,.jieshao{
+
+  .gujia_zixun, .liucheng, .fabu, .jieshao {
     margin: 0 0.5rem;
   }
-  .mf_box .main .gujia_zixun{
+
+  .mf_box .main .gujia_zixun {
     display: flex;
     height: 1.97rem;
     text-align: center;
     justify-content: space-around;
     align-items: center;
   }
-  .mf_box .main .gujia_zixun img{
+
+  .mf_box .main .gujia_zixun img {
     width: 0.88rem;
     height: 0.88rem;
   }
-  .mf_box .main .gujia_zixun p{
+
+  .mf_box .main .gujia_zixun p {
     font-size: 0.33rem;
     font-weight: 700;
     margin-top: 0.18rem;
   }
-  .mf_box .main .fgx{
+
+  .mf_box .main .fgx {
     border-bottom: 0.3rem solid #f2f2f2;
   }
-  .mf_box .main .liucheng .title{
+
+  .mf_box .main .liucheng .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 0.82rem;
   }
-  .mf_box .main .liucheng .title p{
+
+  .mf_box .main .liucheng .title p {
     height: 1px;
     background: #e2e2e2;
     width: 2.37rem;
   }
-  .mf_box .main .liucheng .title span{
+
+  .mf_box .main .liucheng .title span {
     font-size: 0.23rem;
     color: #b2b2b2;
   }
-  .mf_box .main .liucheng .lc_content{
+
+  .mf_box .main .liucheng .lc_content {
     display: flex;
     text-align: center;
     justify-content: space-between;
     align-items: center;
 
   }
-  .mf_box .main .liucheng .lc_content img{
+
+  .mf_box .main .liucheng .lc_content img {
     width: 0.4rem;
     height: 0.4rem;
   }
-  .mf_box .main .liucheng .lc_content p{
+
+  .mf_box .main .liucheng .lc_content p {
     font-size: 0.24rem;
     color: #7f7f7f;
     font-weight: 700;
     margin: 0.22rem 0 0.39rem 0;
   }
-  .jieshao .title{
+
+  .jieshao .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 0.82rem;
   }
-  .jieshao .title p{
+
+  .jieshao .title p {
     height: 1px;
     background: #e2e2e2;
     width: 1.34rem;
   }
-  .jieshao .title span{
+
+  .jieshao .title span {
     font-size: 0.23rem;
     color: #b2b2b2;
   }
-  .jieshao .js_item{
+
+  .jieshao .js_item {
     text-align: center;
   }
-  .jieshao .js_item h2{
+
+  .jieshao .js_item h2 {
     font-size: 0.36rem;
     font-weight: 700;
     margin-bottom: 0.16rem;
   }
-  .jieshao .js_item p{
+
+  .jieshao .js_item p {
     font-size: 0.26rem;
     color: #7f7f7f;
     margin-bottom: 0.44rem;
   }
-  .jieshao .js_item .sale1{
+
+  .jieshao .js_item .sale1 {
     width: 4.53rem;
   }
-  .jieshao .js_item .sale2{
+
+  .jieshao .js_item .sale2 {
     width: 5.60rem;
   }
-  .jieshao .js_item .sale3{
+
+  .jieshao .js_item .sale3 {
     width: 6.41rem;
   }
-  .jieshao .js_xbj{
+
+  .jieshao .js_xbj {
     margin-bottom: 0.75rem;
   }
-  .fabu{
+
+  .fabu {
     margin: 0.22rem 0.5rem 0.18rem 0.5rem;
   }
-  .fabu button{
+
+  .fabu button {
     width: 100%;
     height: 0.8rem;
     color: #fff;
