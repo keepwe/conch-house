@@ -24,6 +24,7 @@ import MyDyss from '../components/MyDyss'
 import MyYhj from '../components/MyYhj'
 import House from '../components/House'
 import Myzx from '../components/Myzx'
+import Ssuo from '../components/Ssuo'
 
 Vue.use(Router);
 
@@ -124,6 +125,10 @@ export default new Router({
     {
       path: '/myzx',
       component: Myzx
+		},
+		{
+      path: '/sousuo',
+      component: Ssuo
 		},
     {
       path: '*',
