@@ -259,12 +259,12 @@
     background: #f2f2f2;
   }
 
-  header {
+  .msgSet_box header {
     background: #fff;
     padding: 0 0.5rem;
   }
 
-  header .title {
+  .msgSet_box header .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
