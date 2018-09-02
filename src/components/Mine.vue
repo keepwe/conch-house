@@ -16,9 +16,9 @@
       <!--我的委托-->
       <router-link to="/myEntrust">
         <div class="entrust">
-        <h2>0</h2>
-        <span>我的委托</span>
-      </div>
+          <h2>0</h2>
+          <span>我的委托</span>
+        </div>
       </router-link>
       <router-link to="/mydyss" tag="div" class="condition">
         <h2>0</h2>
@@ -86,7 +86,7 @@
          <i class="iconfont icon-fanhui"></i>
        </span>
       </div>
-      <div class="item">
+      <div class="item" @click="tap()">
         <p class="fl">联系客服</p>
         <span class="fr">
           <em>10226088</em>
@@ -104,16 +104,28 @@
       </router-link>
     </div>
     <v-footer></v-footer>
+    <v-mot ref="child"></v-mot>
   </div>
 </template>
 
 <script>
   import Footer from "./Footer"
+  import Mot from "./Mot"
 
   export default {
     name: "Mine",
     components: {
-      "v-footer": Footer
+      "v-footer": Footer,
+      "v-mot": Mot,
+    },
+    methods:{
+      tap(){
+        this.$refs.child.isShow=true;
+      }
+    }
+    ,
+    mounted(){
+
     }
   }
 </script>
