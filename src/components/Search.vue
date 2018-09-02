@@ -5,7 +5,7 @@
         <img src="static/images/tubiao/fangdaj.png"/>
         <input type="text" placeholder="输入小区/商区/地铁站">
       </div>
-      <div class="qx fr">取消</div>
+      <div class="qx fr" @click="fh">取消</div>
     </header>
     <div class="main">
       <div class="lishi list">
@@ -25,6 +25,11 @@
 
   export default {
     name: "Search",
+    methods:{
+    	fh(){
+    		this.$router.back(-1)
+    	}
+    },
     components: {
       "v-footer": Footer
     }

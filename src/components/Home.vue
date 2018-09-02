@@ -3,7 +3,7 @@
 		<div class="sy_search">
 			<div class="sy_search_kuang">
 				<i class="iconfont icon-sousuo1"></i>
-				<input type="text" class="where_live"   placeholder="你想住在哪？" />
+				<input type="text" class="where_live"   placeholder="你想住在哪？" @click="tz" />
 				<img class="sy_where" src="static/images/tubiao/index_location.png"/>
 				<span class="sy_where_diming">北京</span>
 			</div>
@@ -296,6 +296,11 @@
 	import Footer from "./Footer"
 	export default{
 		name:"Home",
+		methods:{
+			tz(){
+				this.$router.push("/sousuo")
+			}
+		},
 		components:{
 		  "v-footer":Footer
 		}
