@@ -89,8 +89,9 @@
     background: #f2f2f2;
   }
 
-  header{
-    margin: 0 0.48rem;
+  .fbfy_box header{
+    padding: 0 0.48rem;
+    background: #fff;
   }
 
   .fbfy_box header .title {

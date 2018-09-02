@@ -47,10 +47,10 @@
     height: 100%;
     background: #f2f2f2;
   }
-  header,.set_xitong,.about_box{
+  .setUp header,.set_xitong,.about_box{
     margin-bottom: 0.32rem;
   }
-  header{
+  .setUp header{
     display: flex;
     background: #fff;
     justify-content: center;
