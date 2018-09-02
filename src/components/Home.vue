@@ -56,10 +56,10 @@
 					<i><img class="VR_lookhouse" src="static/images/tubiao/VR_lookhouse.png"/></i>
 					<span>VR看房</span>
 				</li>
-				<li>
+				<router-link to="/maphouse" tag="li">
 					<i class="con"><img class="map_findhouse" src="static/images/tubiao/map_findhouse.png"/></i>
 					<span>地图找房</span>
-				</li>
+				</router-link>
 				<li>
 					<i><img class="subway" src="static/images/tubiao/subway.png"/></i>
 					<span>近地铁</span>

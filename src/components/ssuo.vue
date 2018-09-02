@@ -7,7 +7,7 @@
 		</header>
 		<div class="ss_search_kuang">
 	        <i class="iconfont icon-sousuo1"></i>
-	        <input type="text" placeholder="你想住在哪？"/>
+	        <router-link to="/search" tag="input" type="text" placeholder="你想住在哪？"></router-link>  
 	    </div>
 	    <router-view></router-view>
 	    <v-footer></v-footer>

@@ -4,7 +4,7 @@
 			<i class="iconfont icon-shouye3"></i>
 			<span>首页</span>
 		</router-link>
-		<router-link to="/search" tag="div">
+		<router-link to="/sousuo" tag="div">
 			<i class="iconfont icon-sousuo3"></i>
 			<span>搜索</span>
 		</router-link>

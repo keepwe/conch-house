@@ -35,6 +35,7 @@ import SetUp from '../components/SetUp'
 import MyEntrust from '../components/MyEntrust'
 import FbfyMf from '../components/FbfyMf'
 import MsgSet from '../components/MsgSet'
+import Maphouse from '../components/Mapfindhouse'
 
 Vue.use(Router);
 
@@ -173,6 +174,10 @@ export default new Router({
     {
       path: '/msgSet',
       component: MsgSet
+    },
+    {
+      path: '/maphouse',
+      component: Maphouse
     },
     {
       path: '*',
