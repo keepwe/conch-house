@@ -45,20 +45,21 @@
       tap() {
         var _this = this;
         $.ajax({
-          url: " http://jx.xuzhixiang.top/ap/api/login.php",
-          type: "get",
+          url: "http://10.8.163.93:8080/loginuser.do",
+          type: "post",
           dataType: "json",
           data: {
-            username: _this.username,
+            phone: _this.username,
             password: _this.password,
           },
           success: function (res) {
             if (res.code===0){
               alert("用户名或者密码不正确")
-            }else if (res.code ===1){
+            }else if (res.code ===3){
+              alert("用户不存在");
+            }else if (res.code===1){
               alert("登录成功");
-               _this.$router.push('/mine')
-
+              _this.$router.push('/mine')
             }
           }
         })
