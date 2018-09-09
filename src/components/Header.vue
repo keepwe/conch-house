@@ -1,9 +1,9 @@
 <template>
 	<div id="header">
 		<mt-header :title="name">
-		  <router-link to="/login" slot="left" @click="tap()">
+		  <div slot="left" @click="tap()">
 		    <mt-button><i class="iconfont icon-fanhuijiantou1"></i></mt-button>
-		  </router-link>
+		  </div>
 		</mt-header>
 	</div>
 </template>
@@ -52,10 +52,10 @@
 }
 #header .mint-header-button.is-left{
 	margin-top: -0.06rem;
-}	
+}
 #header .icon-fanhuijiantou1{
 	font-size: 0.4rem;
 	font-weight: 400;
-}	
+}
 </style>
 

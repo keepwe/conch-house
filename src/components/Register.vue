@@ -22,6 +22,7 @@
 </template>
 
 <script>
+  import $ from  "jquery"
 	import Header  from "./Header";
 	export default{
 		name:"Register",
@@ -31,14 +32,29 @@
 				password:"",
 				dxyzm:"",
 				tit:"注册账号"
-			}	
+			}
 		},
 		components:{
 			"v-header":Header
 		},
 		methods:{
 			tap(){
-				this.$router.push("/login")
+			  var _this = this;
+				$.ajax({
+				url:"http://jx.xuzhixiang.top/ap/api/reg.php",
+				type:"get",
+          dataType:"json",
+				data:{
+          username:_this.phonenum,
+          password:_this.password
+				},
+				success:function(res){
+				  if (res.code===1){
+				    alert("注册成功");
+            _this.$router.push("/login");
+          }
+				}
+				})
 			}
 		}
 	}
