@@ -1,12 +1,20 @@
 <template>
   <div class="box">
     <div class="my_header">
+      <div v-if="token">
       <h1 class="my_login">
         <router-link to="/login"><span>登录</span></router-link>
         /
         <router-link to="register"><span>注册</span></router-link>
       </h1>
       <p>注册手机号不会透露给经纪人</p>
+      </div>
+      <div v-else>
+        <h1 class="my_login">
+          <span v-model="user"></span>
+        </h1>
+        <p>查看并编辑个人资料</p>
+      </div>
     </div>
     <div class="my_jilu">
       <div class="record">
@@ -114,6 +122,12 @@
 
   export default {
     name: "Mine",
+    data(){
+      return{
+        token:true,
+        user:"",
+      }
+    },
     components: {
       "v-footer": Footer,
       "v-mot": Mot,
