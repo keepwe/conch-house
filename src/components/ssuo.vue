@@ -7,7 +7,7 @@
 		</header>
 		<div class="ss_search_kuang">
 	        <i class="iconfont icon-sousuo1"></i>
-	        <router-link to="/search" tag="input" type="text" placeholder="你想住在哪？"></router-link>  
+	        <router-link to="/search" tag="input" type="text" placeholder="你想住在哪？"></router-link>
 	    </div>
 	    <router-view></router-view>
 	    <v-footer></v-footer>
@@ -24,7 +24,7 @@
 	}
 </script>
 
-<style> 
+<style>
 #Ss header{
 	padding: 0.48rem 1rem 0.36rem;
 	height:0.48rem;
@@ -35,9 +35,6 @@
 	opacity:0.7;
 	display: flex;
 	justify-content: space-between;
-}
-#Ss .router-link-active{
-	color:rgba(0,0,0,1);
 }
 #Ss .ss_search_kuang{
     height: 0.6rem;
@@ -63,5 +60,5 @@
     color: rgba(0, 0, 0, 1);
     opacity: 0.5;
   }
-	
+
 </style>

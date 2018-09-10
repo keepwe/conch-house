@@ -13,7 +13,7 @@
         <input type="text" class="pass" placeholder="请输入新密码（最少8位数，数字+子母）" v-model="password"/>
       </div>
       <div class="re_agree">
-        <input type="checkbox" value=""/>
+        <input type="checkbox" value="" checked/>
         <span>请阅读并同意《用户使用协议》及《用户服务协议》</span>
       </div>
       <button id="re_commit" @click="tap()">提交</button>
