@@ -138,17 +138,17 @@ export default new Router({
     {
       path: '/myzx',
       component: Myzx
-		},
-		{
+	},
+	{
       path: '/sousuo',
+      redirect:"/sousuo/ssesf",
       component: Ssuo,
-      children:[
-      	{path:"/ssesf",name:"Ssesf",component:Ssesf},
-      	{path:"/ssxf",name:"Ssxf",component:Ssxf},
-      	{path:"/sszf",name:"Sszf",component:Sszf},
-      	{path:"/sousuo",redirect:"/ssesf"},
+      children:[ 
+      	{path:"ssesf",name:"Ssesf",component:Ssesf},
+      	{path:"ssxf",name:"Ssxf",component:Ssxf},
+      	{path:"sszf",name:"Sszf",component:Sszf}	
       ]
-		},
+	},
     {
       path: '/fbfy',
       component: Fbfy

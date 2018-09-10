@@ -1,5 +1,5 @@
 <template>
-	<div style="overflow: hidden;">
+	<div style="overflow: hidden;" id="home">
 		<div class="sy_search">
 			<div class="sy_search_kuang">
 				<i class="iconfont icon-sousuo1"></i>
@@ -307,7 +307,7 @@
 	}
 </script>
 
-<style scoped="">
+<style scoped="scoped">
   .sy_search{
     margin: 0.48rem 0 0 0;
     padding: 0 0.28rem;
