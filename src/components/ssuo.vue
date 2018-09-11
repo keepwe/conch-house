@@ -15,7 +15,6 @@
 </template>
 
 <script>
-	import $ from "jquery"
 	import Footer from "./Footer"
 	export default{
 		name:"Ssuo",

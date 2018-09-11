@@ -8,6 +8,7 @@
 				<span class="sy_where_diming">北京</span>
 			</div>
 		</div>
+		<section>
 		<div class="sy_tab">
 			<ul class="sy_tubiao">
 				<router-link to="/esf" tag="li">
@@ -288,6 +289,7 @@
         </div>
 			</div>
 		</div>
+		</section>
 		<v-footer></v-footer>
 	</div>
 </template>
