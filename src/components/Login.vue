@@ -10,7 +10,7 @@
         <input type="text" class="phonenum" placeholder="请输入手机号" v-model="username"/>
       </div>
       <div class="l_con_pass">
-        <input type="text" class="pass" placeholder="请输入密码" v-model="password"/>
+        <input type="password" class="pass" placeholder="请输入密码" v-model="password"/>
       </div>
       <mt-button type="primary" size="large" @click="tap()"  v-loading="loading2"
                  element-loading-text="登录中"
@@ -35,6 +35,8 @@
 
 <script>
   import $ from "jquery";
+  import setCookie from "../js/setCookie";
+
   export default {
     name: "Login",
     data: function () {
@@ -57,15 +59,15 @@
             password: _this.password,
           },
           success: function (res) {
-            this.loading2 = false;
+            _this.loading2 = false;
             if (res.code===0){
-              this.$message({
+              _this.$message({
                 message: '用户名或密码不正确',
                 type: 'warning',
                 duration:2000,
               });
             }else if (res.code ===3){
-              this.$message({
+              _this.$message({
                 message: '用户不存在',
                 type: 'warning',
                 duration:2000,
@@ -76,6 +78,8 @@
                 type: 'success',
                 duration:2000,
               });
+              setCookie("uid",_this.username,30);
+              setCookie("token",false,30);
               _this.$router.push('/mine')
             }
           },
