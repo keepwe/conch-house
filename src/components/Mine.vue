@@ -9,11 +9,12 @@
       </h1>
       <p>注册手机号不会透露给经纪人</p>
       </div>
-      <div v-else>
+      <div class="my_logined" v-else>
         <h1 class="my_login">
           <span>{{uid}}</span>
         </h1>
         <p>查看并编辑个人资料</p>
+        <span></span>
       </div>
     </div>
     <div class="my_jilu">
@@ -145,6 +146,8 @@
 	      if(this.token==="false"){
 	      	this.token = false
 	      	this.uid=getCookie("uid");
+	      }else{
+	      	this.token = true
 	      }
 	    })
 	  }
@@ -159,12 +162,24 @@
   /*头*/
   .my_header {
     margin-top: 1.05rem;
+    
   }
-
+	
   .my_header .my_login {
     font-size: 0.46rem;
   }
-
+  .my_logined{
+  	position: relative;
+  }
+	.my_logined>span{
+		width: 1.4rem;
+		height: 1.4rem;
+		position: absolute;
+		right: 0.3rem;
+		top: -0.2rem;
+		border-radius: 0.7rem;
+		background: url(../../static/images/tubiao/pic2.png) center/110%;
+	}
   .my_header p {
     font-size: 0.23rem;
     opacity: .5;
