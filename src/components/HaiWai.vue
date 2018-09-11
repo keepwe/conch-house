@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<v-header :name="tit"></v-header>
+		<nav id="nav">
 		<ul class="hw_tubiao">
 			<li>
 				<img src="static/images/tubiao/hw_meiguo.jpg"/>
@@ -35,6 +36,7 @@
 				<span>韩国</span>
 			</li>
 		</ul>
+		</nav>
 		<div class="hw_tubiao_control">
 			<div class="htc_one htc_active"></div>
 			<div></div>
@@ -97,7 +99,8 @@
 		name:"Haiwai",
 		data(){
 			return{
-				tit:"海外频道"
+				tit:"海外频道",
+				isshow:false
 			}
 		},
 		components:{

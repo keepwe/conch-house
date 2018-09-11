@@ -70,6 +70,10 @@
                 type:"warning",
                 message:"手机号已注册，请直接登录"
               })
+              setTimeout(function(){
+              	_this.$router.push("/login")
+              },3000)
+              
             }else if (res.code===1){
               $.ajax({
                 url: "http://10.8.163.93:8080/getphone.do",
