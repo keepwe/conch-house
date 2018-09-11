@@ -11,7 +11,7 @@
       </div>
       <div v-else>
         <h1 class="my_login">
-          <span v-model="uid"></span>
+          <span>{{uid}}</span>
         </h1>
         <p>查看并编辑个人资料</p>
       </div>
@@ -138,18 +138,16 @@
         this.$refs.child.isShow=true;
       }
     },
-    updated(){
-      this.$nextTick(function(){
-        this.token=getCookie("token");
-        this.uid=getCookie("uid");
-      })
-    },
     mounted(){
-      this.token=getCookie("token");
-      this.uid=getCookie("uid");
-      console.log(this.token);
-      console.log(this.uid)
-    }
+			this.$nextTick(function(){
+	      this.token=getCookie("token");
+	      this.uid=getCookie("uid"); 
+	      if(this.token==="false"){
+	      	this.token = false
+	      	this.uid=getCookie("uid");
+	      }
+	    })
+	  }
   }
 </script>
 
