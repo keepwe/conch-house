@@ -24,7 +24,6 @@
 <script>
   import $ from "jquery"
   import Header from "./Header";
-
   export default {
     name: "Register",
     data: function () {

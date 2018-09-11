@@ -11,7 +11,7 @@
       </div>
       <div v-else>
         <h1 class="my_login">
-          <span v-model="user"></span>
+          <span v-model="uid"></span>
         </h1>
         <p>查看并编辑个人资料</p>
       </div>
@@ -119,13 +119,14 @@
 <script>
   import Footer from "./Footer"
   import Mot from "./Mot"
+  import getCookie from "../js/getCookie"
 
   export default {
     name: "Mine",
     data(){
       return{
         token:true,
-        user:"",
+        uid:"",
       }
     },
     components: {
@@ -136,10 +137,18 @@
       tap(){
         this.$refs.child.isShow=true;
       }
-    }
-    ,
+    },
+    updated(){
+      this.$nextTick(function(){
+        this.token=getCookie("token");
+        this.uid=getCookie("uid");
+      })
+    },
     mounted(){
-
+      this.token=getCookie("token");
+      this.uid=getCookie("uid");
+      console.log(this.token);
+      console.log(this.uid)
     }
   }
 </script>
