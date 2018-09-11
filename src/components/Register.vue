@@ -24,6 +24,15 @@
 <script>
   import $ from "jquery"
   import Header from "./Header";
+  var setSecIDR = "";
+  var Rwait =60;
+  function SetBtnStateR(btn, isEnable, text) {
+    if (isEnable) {
+      $(btn).removeAttr("disabled").html(text);
+    } else {
+      $(btn).attr({ "disabled": "disabled" }).html(text);
+    }
+  }
   export default {
     name: "Register",
     data: function () {
@@ -40,7 +49,7 @@
     methods: {
       getyzm(){
         var _this = this;
-        wait =60;
+        Rwait =60;
         var phone = $(".phonenum").val();
         if (!(/^1\d{10}$/.test(phone))) {
           _this.$message({
@@ -49,7 +58,6 @@
           });
           return;
         }
-        SetBtnState("#btnReSend", false,"发送成功");
         $.ajax({
           url:"http://10.8.163.93:8080/checkphone.do",
           type:"get",
@@ -77,25 +85,22 @@
                       message:res.msg
                     })
                   }else if(res.code===1){
-                    _this.$message({
-                      type:"warning",
-                      message:res.msg
-                    })
+                    SetBtnStateR("#btnReSend", false,"发送成功");
+                    setSecIDR = setInterval(function () {
+                      Rwait = Rwait - 1;
+                      if (Rwait === 0) {
+                        clearInterval(setSecIDR);
+                        SetBtnStateR("#btnReSend", true, "重新获取验证码");
+                      } else {
+                        SetBtnStateR("#btnReSend", false, Rwait + "秒后重试");
+                      }
+                    }, 1000);
                   }
                 }
               })
             }
           }
         });
-        setSecID = setInterval(function () {
-          wait = wait - 1;
-          if (wait == 0) {
-            clearInterval(setSecID);
-            SetBtnState("#btnReSend", true, "重新获取验证码");
-          } else {
-            SetBtnState("#btnReSend", false, wait + "秒后重试");
-          }
-        }, 1000);
       },
       tap() {
         var _this = this;
@@ -118,15 +123,6 @@
           }
         })
       }
-    }
-  }
-  var setSecID = "";
-  var wait =60;
-  function SetBtnState(btn, isEnable, text) {
-    if (isEnable) {
-      $(btn).removeAttr("disabled").html(text);
-    } else {
-      $(btn).attr({ "disabled": "disabled" }).html(text);
     }
   }
 </script>

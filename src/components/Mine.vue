@@ -125,7 +125,7 @@
     name: "Mine",
     data(){
       return{
-        token:true,
+        token:false,
         uid:"",
       }
     },
