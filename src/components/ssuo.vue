@@ -1,9 +1,9 @@
 <template>
 	<div id="Ss">
 		<header>
-			<router-link to="/ssesf" tag="span">二手房</router-link>
-			<router-link to="/ssxf" tag="span">新房</router-link>
-			<router-link to="/sszf" tag="span">租房</router-link>
+			<router-link to="/sousuo/ssesf" tag="span" active-class="active1">二手房</router-link>
+			<router-link to="/sousuo/ssxf" tag="span"  active-class="active1">新房</router-link>
+			<router-link to="/sousuo/sszf" tag="span"  active-class="active1">租房</router-link>
 		</header>
 		<div class="ss_search_kuang">
 	        <i class="iconfont icon-sousuo1"></i>
@@ -35,6 +35,9 @@
 	opacity:0.7;
 	display: flex;
 	justify-content: space-between;
+}
+#Ss .active1{
+	color:rgba(0,0,0,1)!important;
 }
 #Ss .ss_search_kuang{
     height: 0.6rem;
