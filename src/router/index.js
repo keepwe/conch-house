@@ -143,10 +143,10 @@ export default new Router({
       path: '/sousuo',
       redirect:"/sousuo/ssesf",
       component: Ssuo,
-      children:[ 
+      children:[
       	{path:"ssesf",name:"Ssesf",component:Ssesf},
       	{path:"ssxf",name:"Ssxf",component:Ssxf},
-      	{path:"sszf",name:"Sszf",component:Sszf}	
+      	{path:"sszf",name:"Sszf",component:Sszf}
       ]
 	},
     {
@@ -186,7 +186,7 @@ export default new Router({
       component: Modalxx
     },
     {
-      path: '*',
+      path: '/',
       redirect:"/home"
     }
   ]

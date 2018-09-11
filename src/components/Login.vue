@@ -12,7 +12,10 @@
       <div class="l_con_pass">
         <input type="text" class="pass" placeholder="请输入密码" v-model="password"/>
       </div>
-      <mt-button type="primary" size="large" @click="tap()">登录</mt-button>
+      <mt-button type="primary" size="large" @click="tap()"  v-loading="loading2"
+                 element-loading-text="登录中"
+                 element-loading-spinner="el-icon-loading"
+                 element-loading-background="rgba(0, 0, 0, 0.3)">登录</mt-button>
       <div class="l_con_help">
         <router-link to="/fastlogin" tag="span">手机快捷登录</router-link>
         <span>|</span>
@@ -32,18 +35,19 @@
 
 <script>
   import $ from "jquery";
-
   export default {
     name: "Login",
     data: function () {
       return {
         username: "",
-        password: ""
+        password: "",
+        loading2: false
       }
     },
     methods: {
       tap() {
         var _this = this;
+        _this.loading2 = true;
         $.ajax({
           url: "http://10.8.163.93:8080/loginuser.do",
           type: "post",
@@ -53,14 +57,35 @@
             password: _this.password,
           },
           success: function (res) {
+            this.loading2 = false;
             if (res.code===0){
-              alert("用户名或者密码不正确")
+              this.$message({
+                message: '用户名或密码不正确',
+                type: 'warning',
+                duration:2000,
+              });
             }else if (res.code ===3){
-              alert("用户不存在");
+              this.$message({
+                message: '用户不存在',
+                type: 'warning',
+                duration:2000,
+              });
             }else if (res.code===1){
-              alert("登录成功");
+              _this.$message({
+                message: '登录成功',
+                type: 'success',
+                duration:2000,
+              });
               _this.$router.push('/mine')
             }
+          },
+          error:function (err) {
+            _this.$message({
+              message:'登录失败，请重试',
+              type:"error",
+              duration:3000,
+            });
+            _this.loading2 = false;
           }
         })
       }

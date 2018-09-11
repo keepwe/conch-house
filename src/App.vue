@@ -25,6 +25,9 @@ input,a{outline:none;}
 .router-link-active{
 	color: #FF9012
 }
+.active{
+  color: #000;
+}
 .fr{
   float: right;
 }
