@@ -42,11 +42,11 @@
 	    		<p>和公婆一起住，小夫妻如何玩浪漫，请戳</p>
 	    		<div class="zx_list_item_link_hd">
 	    			<div class="zx_list_item_link_dz">
-		    			<img src="static/images/tubiao/zx_dz.png"/>
+		    			<img src="static/images/tubiao/zx_dz1.png"/>
 		    			<span>4</span>
 		    		</div>
 		    		<div class="zx_list_item_link_gz">
-		    			<img src="static/images/tubiao/zx_gz.png"/>
+		    			<img src="static/images/tubiao/zx_gz1.png"/>
 		    			<span>15</span>
 		    		</div>
 	    		</div>
