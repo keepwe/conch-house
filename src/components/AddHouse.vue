@@ -1,7 +1,9 @@
 <template>
     <div class="addHouse">
       <header>
+        <span class="iconfont icon-navbankicon" @click="goback()"></span>
         <span>我的房子</span>
+        <span>&nbsp;</span>
       </header>
       <div class="add_desc">
         <h2>添加房屋资产</h2>
@@ -72,17 +74,23 @@
 
 <script>
     export default {
-        name: "AddHouse"
+        name: "AddHouse",
+      methods:{
+        goback() {
+          this.$router.back(-1);
+        },
+      }
     }
 </script>
 
 <style scoped>
 header{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 0.34rem;
   height: 0.88rem;
+  padding: 0 0.5rem;
 }
   .add_desc{
     text-align: center;
