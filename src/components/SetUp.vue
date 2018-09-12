@@ -1,7 +1,9 @@
 <template>
     <div class="setUp">
       <header>
+        <span class="iconfont icon-navbankicon" @click="goback()"></span>
         <span>设置</span>
+        <span>&nbsp;</span>
       </header>
       <div class="set_xitong">
         <router-link to="/msgSet">
@@ -47,6 +49,9 @@
           }
       },
       methods:{
+        goback() {
+          this.$router.back(-1);
+        },
           loginOut(){
             setCookie("token","",-7);
             setCookie("uid","",-7);
@@ -79,10 +84,11 @@
   .setUp header{
     display: flex;
     background: #fff;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 0.34rem;
     height: 0.88rem;
+    padding: 0 0.5rem;
   }
 
   .set_xitong .bar_name,.about_box .bar_name{
