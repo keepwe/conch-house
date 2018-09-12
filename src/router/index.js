@@ -37,6 +37,7 @@ import FbfyMf from '../components/FbfyMf'
 import MsgSet from '../components/MsgSet'
 import Maphouse from '../components/Mapfindhouse'
 import Modalxx from '../components/Modalxx'
+import MyMsg from '../components/MyMsg'
 
 Vue.use(Router);
 
@@ -184,6 +185,10 @@ export default new Router({
     {
       path: '/modalxx',
       component: Modalxx
+    },
+    {
+      path: '/myMsg',
+      component: MyMsg
     },
     {
       path: '/',

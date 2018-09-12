@@ -2,19 +2,21 @@
   <div class="box">
     <div class="my_header">
       <div v-if="token">
-      <h1 class="my_login">
-        <router-link to="/login"><span>登录</span></router-link>
-        /
-        <router-link to="register"><span>注册</span></router-link>
-      </h1>
-      <p>注册手机号不会透露给经纪人</p>
+        <h1 class="my_login">
+          <router-link to="/login"><span>登录</span></router-link>
+          /
+          <router-link to="register"><span>注册</span></router-link>
+        </h1>
+        <p>注册手机号不会透露给经纪人</p>
       </div>
       <div class="my_logined" v-else>
-        <h1 class="my_login">
-          <span>{{uid}}</span>
-        </h1>
-        <p>查看并编辑个人资料</p>
-        <span></span>
+        <router-link to="/myMsg">
+          <h1 class="my_login">
+            <span>{{uid}}</span>
+          </h1>
+          <p>查看并编辑个人资料</p>
+          <span class="touxiang"></span>
+        </router-link>
       </div>
     </div>
     <div class="my_jilu">
@@ -124,33 +126,33 @@
 
   export default {
     name: "Mine",
-    data(){
-      return{
-        token:false,
-        uid:"",
+    data() {
+      return {
+        token: false,
+        uid: "",
       }
     },
     components: {
       "v-footer": Footer,
       "v-mot": Mot,
     },
-    methods:{
-      tap(){
-        this.$refs.child.isShow=true;
+    methods: {
+      tap() {
+        this.$refs.child.isShow = true;
       }
     },
-    mounted(){
-			this.$nextTick(function(){
-	      this.token=getCookie("token");
-	      this.uid=getCookie("uid");
-	      if(this.token==="false"){
-	      	this.token = false
-	      	this.uid=getCookie("uid");
-	      }else{
-	      	this.token = true
-	      }
-	    })
-	  }
+    mounted() {
+      this.$nextTick(function () {
+        this.token = getCookie("token");
+        this.uid = getCookie("uid");
+        if (this.token === "false") {
+          this.token = false
+          this.uid = getCookie("uid");
+        } else {
+          this.token = true
+        }
+      })
+    }
   }
 </script>
 
@@ -168,18 +170,21 @@
   .my_header .my_login {
     font-size: 0.46rem;
   }
-  .my_logined{
-  	position: relative;
+
+  .my_logined {
+    position: relative;
   }
-	.my_logined>span{
-		width: 1.4rem;
-		height: 1.4rem;
-		position: absolute;
-		right: 0.3rem;
-		top: -0.2rem;
-		border-radius: 0.7rem;
-		background: url("../../static/images/tubiao/pic2.png") center/110%;
-	}
+
+  .my_logined .touxiang {
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    right: 0.3rem;
+    top: -0.2rem;
+    border-radius: 0.7rem;
+    background: url("../../static/images/tubiao/pic2.png") center/110%;
+  }
+
   .my_header p {
     font-size: 0.23rem;
     opacity: .5;

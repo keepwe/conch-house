@@ -30,15 +30,41 @@
           <span class="iconfont icon-fanhui"></span>
         </div>
       </div>
-      <div class="logout">
+      <div class="logout" @click="loginOut()" v-show="!token">
         退出登录
       </div>
     </div>
 </template>
 
 <script>
+  import setCookie from "../js/setCookie"
+  import getCookie from "../js/getCookie"
     export default {
-        name: "SetUp"
+        name: "SetUp",
+      data(){
+          return{
+            token:true
+          }
+      },
+      methods:{
+          loginOut(){
+            setCookie("token","",-7);
+            setCookie("uid","",-7);
+            this.$router.push("/mine")
+          }
+      },
+      mounted(){
+        this.$nextTick(function () {
+          this.token = getCookie("token");
+          this.uid = getCookie("uid");
+          if (this.token === "false") {
+            this.token = false;
+            this.uid = getCookie("uid");
+          } else {
+            this.token = true
+          }
+        })
+      }
     }
 </script>
 

@@ -88,7 +88,7 @@
 
 <style scoped>
   .fbfy_box {
-    height: auto;
+    height: 100%;
     background: #f2f2f2;
   }
 
