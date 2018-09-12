@@ -1,8 +1,8 @@
 <template>
 	<div id="header2">
 		<mt-header :title="name">
-		  <router-link to="/" slot="left" @click="tap()">
-		    <mt-button><i class="iconfont icon-fanhuijiantou1"></i></mt-button>
+		  <router-link to="" slot="left">
+		    <mt-button @click="tap()"><i class="iconfont icon-fanhuijiantou1"></i></mt-button>
 		  </router-link>
 		</mt-header>		
 	</div>

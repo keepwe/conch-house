@@ -79,8 +79,8 @@
 			<div class="sy_conch">
 				<div class="sy_conch_tit">
 					<h1>海螺指数</h1>
-					<span>查看更多</span>
-					<i class="iconfont icon-fanhuijiantou2"></i>
+					<!--<span>查看更多</span>-->
+					<!--<i class="iconfont icon-fanhuijiantou2"></i>-->
 				</div>
 				<div class="sy_conch_con">
 					<div class="sy_conch_con_l">
@@ -214,76 +214,13 @@
 			<div class="wntj">
 				<div class="wntj_tit">
 					<b	>为你推荐</b>
-					<span class="active">二手房</span>
-					<span>新房</span>
-					<span>租房</span>
+					<span :class="activeo" @click="tap1()">二手房</span>
+					<span :class="activet" @click="tap2()">新房</span>
+					<span :class="activeth" @click="tap3()">租房</span>
 				</div>
-        <router-link to="/house"><div class="es_item">
-          <div class="fl pic">
-            <img src="static/images/picture/esf_p3.png"/>
-          </div>
-          <div class="fl es_content">
-            <h3 class="es_title">
-              龙城花园北二区&nbsp;一室一厅
-            </h3>
-            <p class="es_desc">
-              46.19平米/南/顶层&nbsp;共四层
-            </p>
-            <div class="es_tags">
-              <span>满两年</span>
-              <span>地铁</span>
-              <span>随时可看</span>
-            </div>
-            <div class="es_price">
-              <span class="price_sum">265万</span>
-              <span class="unit_price">57,421元/平</span>
-            </div>
-          </div>
-        </div></router-link>
-        <router-link to="/house"><div class="es_item">
-          <div class="fl pic">
-            <img src="static/images/picture/esf_p3.png"/>
-          </div>
-          <div class="fl es_content">
-            <h3 class="es_title">
-              龙城花园北二区&nbsp;一室一厅
-            </h3>
-            <p class="es_desc">
-              46.19平米/南/顶层&nbsp;共四层
-            </p>
-            <div class="es_tags">
-              <span>满两年</span>
-              <span>地铁</span>
-              <span>随时可看</span>
-            </div>
-            <div class="es_price">
-              <span class="price_sum">265万</span>
-              <span class="unit_price">57,421元/平</span>
-            </div>
-          </div>
-        </div></router-link>
-        <router-link to="/house"><div class="es_item">
-          <div class="fl pic">
-            <img src="static/images/picture/esf_p3.png"/>
-          </div>
-          <div class="fl es_content">
-            <h3 class="es_title">
-              龙城花园北二区&nbsp;一室一厅
-            </h3>
-            <p class="es_desc">
-              46.19平米/南/顶层&nbsp;共四层
-            </p>
-            <div class="es_tags">
-              <span>满两年</span>
-              <span>地铁</span>
-              <span>随时可看</span>
-            </div>
-            <div class="es_price">
-              <span class="price_sum">265万</span>
-              <span class="unit_price">57,421元/平</span>
-            </div>
-          </div>
-        </div></router-link>
+        		<v-HomeFy v-if="flag1" :hesf="str1"></v-HomeFy>
+        		<v-HomeFytwo v-if="flag2"></v-HomeFytwo>
+        		<v-HomeFythree v-if="flag3"></v-HomeFythree>
         <div class="watch_more">
           <button>查看全部二手房</button>
         </div>
@@ -296,15 +233,81 @@
 
 <script>
 	import Footer from "./Footer"
+	import HomeFy from "./HomeFy"
+	import HomeFytwo from "./HomeFytwo"
+	import HomeFythree from "./HomeFythree"
+	import axios from 'axios'
 	export default{
 		name:"Home",
+		data(){
+			return{
+				flag1:true,
+				flag2:false,
+				flag3:false,
+				activeo:"active",
+				activet:"",
+				activeth:'',
+				str1:''
+			}	
+		},
 		methods:{
 			tz(){
 				this.$router.push("/sousuo")
+			},
+			tap1(){
+				this.flag1=true,
+				this.flag2=false,
+				this.flag3=false,
+				this.activeo="active",
+				this.activet="",
+				this.activeth=""
+			},
+			tap2(){
+				this.flag1=false,
+				this.flag2=true,
+				this.flag3=false,
+				this.activeo="",
+				this.activet="active",
+				this.activeth=""
+			},
+			tap3(){
+				this.flag1=false,
+				this.flag2=false,
+				this.flag3=true,
+				this.activeo="",
+				this.activet="",
+				this.activeth="active"
 			}
 		},
 		components:{
-		  "v-footer":Footer
+		  "v-footer":Footer,
+		  "v-HomeFy":HomeFy,
+		  "v-HomeFytwo":HomeFytwo,
+		  "v-HomeFythree":HomeFythree
+		},
+		mounted(){
+			var _this = this;
+			axios({
+				method:'post',
+				url:"http://10.8.163.93:8080/getHouseByHouseId.do",
+				params:{houseId:1}
+			}).then(function(data){
+//				console.log(data.data.data)
+				_this.str1 = data.data.data
+			}).catch(function(error){
+				console.log(error)
+			})
+			//经纪人添加房源
+//			axios({
+//				method:'post',
+//				url:"http://10.8.163.93:8080/addHouse.do",
+//				params:{brokerId:1,categoryId:1,communityId:1,houseId:1,houseInfo:"满地铁随时可看",houseLocation:"航海路",houseName:"龙城花园北二区",
+//				housePhoto:"esf_p4.png",housePrice:57,houseType:"三室一厅"}
+//			}).then(function(data){
+//				console.log(data)
+//			}).catch(function(error){
+//				console.log(error)
+//			})
 		}
 	}
 </script>
@@ -561,51 +564,7 @@
   .wntj_tit .active{
     color:rgba(255,144,18,1);
   }
-  .es_item{
-    height: 2.16rem;
-    overflow: hidden;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-    margin-top: 0.38rem;
-  }
-  .es_item .pic{
-    width: 2.46rem;
-    height: 100%;
-  }
-  .es_item .pic img{
-    width: 2.16rem;
-    height: 1.55rem;
-  }
-  .es_content .es_title{
-    font-size: 0.34rem;
-  }
-  .es_content .es_desc{
-    font-size: 0.2rem;
-    height: 0.6rem;
-    line-height: 0.6rem;
-  }
-  .es_content .es_tags{
-    font-size: 0;
-    height: 0.6rem;
-  }
-  .es_content .es_tags span{
-    background: #ff9012;
-    font-size: 0.24rem;
-    padding:0.09rem 0.26rem;
-    color: #FFF;
-    margin-right: 0.1rem;
-  }
-  .es_content .es_price{
-    font-size: 0;
-  }
-  .es_content .es_price .price_sum{
-    color: #ff9012;
-    font-size: 0.26rem;
-    margin-right: 0.2rem;
-  }
-  .es_content .es_price .unit_price{
-    font-size: 0.22rem;
-    color: rgba(1,1,1,.5);
-  }
+  
   .watch_more button{
     background: rgba(255,222,185,1);
     width: 100%;
