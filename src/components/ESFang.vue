@@ -8,8 +8,6 @@
       </div>
       <span class="iconfont icon-xiaoxi2"></span>
     </header>
-    </header>
-    </header>
     <div class="es_search">
       <el-cascader
         :options="options2"
@@ -279,7 +277,7 @@ export default{
     width: 1.1rem !important;
     height: auto;
   }
-  
+
   .es_house .es_search .el-cascader .el-input--suffix .el-input__inner::placeholder {
     color: #000;
   }

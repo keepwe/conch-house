@@ -4,7 +4,7 @@
       <p class="title">
         <span class="iconfont icon-navbankicon" @click="goback()"></span>
         <span>发布租赁房源（<span class="fbfy_map">北京</span>）</span>
-        <span><img src="static/images/tubiao/my_mywt_qcz_xx.png"/></span>
+        <span @click="modalxx()"><img src="static/images/tubiao/my_mywt_qcz_xx.png"/></span>
       </p>
     </header>
     <div class="fbfy_house_xinxi">
@@ -78,6 +78,9 @@
     methods: {
       goback() {
         this.$router.back(-1);
+      },
+      modalxx(){
+        this.$router.push("/modalxx")
       }
     }
   }
@@ -85,7 +88,7 @@
 
 <style scoped>
   .fbfy_box {
-    height: auto;
+    height: 100%;
     background: #f2f2f2;
   }
 
