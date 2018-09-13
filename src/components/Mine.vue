@@ -146,7 +146,7 @@
         this.token = getCookie("token");
         this.uid = getCookie("uid");
         if (this.token === "false") {
-          this.token = false
+          this.token = false;
           this.uid = getCookie("uid");
         } else {
           this.token = true
