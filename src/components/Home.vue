@@ -53,26 +53,26 @@
 				</router-link>
 			</ul>
 			<ul class="sy_seehouse">
-				<li>
+        <router-link to="/esf" tag="li">
 					<i><img class="VR_lookhouse" src="static/images/tubiao/VR_lookhouse.png"/></i>
 					<span>VR看房</span>
-				</li>
+        </router-link>
 				<router-link to="/maphouse" tag="li">
 					<i class="con"><img class="map_findhouse" src="static/images/tubiao/map_findhouse.png"/></i>
 					<span>地图找房</span>
 				</router-link>
-				<li>
+          <router-link to="/esf" tag="li">
 					<i><img class="subway" src="static/images/tubiao/subway.png"/></i>
 					<span>近地铁</span>
-				</li>
-				<li>
+          </router-link>
+            <router-link to="/esf" tag="li">
 					<i class="con"><img class="man5nian" src="static/images/tubiao/man5nian.png"/></i>
-					<span>满五年</span>
-				</li>
-				<li>
+					<span>满两年</span>
+            </router-link>
+              <router-link to="/esf" tag="li">
 					<i><img class="nanbeitou" src="static/images/tubiao/nanbeitou.png"/></i>
 					<span>南北通透</span>
-				</li>
+              </router-link>
 			</ul>
 		</div>
 		<div id="main">
@@ -248,7 +248,7 @@
 				activet:"",
 				activeth:'',
 				str1:''
-			}	
+			}
 		},
 		methods:{
 			tz(){
@@ -295,7 +295,7 @@
 				_this.str1 = data.data.data
 			}).catch(function(error){
 				console.log(error)
-			})			
+			})
 		}
 	}
 </script>
@@ -552,7 +552,7 @@
   .wntj_tit .active{
     color:rgba(255,144,18,1);
   }
-  
+
   .watch_more button{
     background: rgba(255,222,185,1);
     width: 100%;
