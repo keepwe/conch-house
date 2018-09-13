@@ -288,26 +288,14 @@
 		mounted(){
 			var _this = this;
 			axios({
-				method:'post',
-				url:"http://10.8.163.93:8080/getHouseByHouseId.do",
-				params:{houseId:1}
+				method:'get',
+				url:"http://jx.xuzhixiang.top/ap/api/productlist.php",
+				params:{uid:4322}
 			}).then(function(data){
-//				console.log(data.data.data)
 				_this.str1 = data.data.data
 			}).catch(function(error){
 				console.log(error)
-			})
-			//经纪人添加房源
-//			axios({
-//				method:'post',
-//				url:"http://10.8.163.93:8080/addHouse.do",
-//				params:{brokerId:1,categoryId:1,communityId:1,houseId:1,houseInfo:"满地铁随时可看",houseLocation:"航海路",houseName:"龙城花园北二区",
-//				housePhoto:"esf_p4.png",housePrice:57,houseType:"三室一厅"}
-//			}).then(function(data){
-//				console.log(data)
-//			}).catch(function(error){
-//				console.log(error)
-//			})
+			})			
 		}
 	}
 </script>

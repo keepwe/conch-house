@@ -1,24 +1,24 @@
 <template>
 	<div>
-		<router-link to="/house" v-for="(item,i) in hesf" :key="index"><div class="es_item">
+		<router-link to="/house" v-for="(item,i) in hesf" :key="i"><div class="es_item">
           <div class="fl pic">
-            <img :src="'static/images/picture/'+item.housePhoto"/>
+            <img :src="item.pimg"/>
           </div>
           <div class="fl es_content">
             <h3 class="es_title">
-              	{{item.houseName}}&nbsp;{{item.houseType}}
+              	{{item.pname}}
             </h3>
             <p class="es_desc">
-              {{item.houseArea}}平米/南/顶层&nbsp;共四层
+              {{item.pdesc}}平米/南/顶层&nbsp;共四层
             </p>
             <div class="es_tags">
-              <span>满两年</span>
-              <span>地铁</span>
-              <span>随时可看</span>
+              <span v-if="flag1">满两年</span>
+              <span v-if="flag2">地铁</span>
+              <span v-if="flag3">随时可看</span>
             </div>
             <div class="es_price">
-              <span class="price_sum">{{item.housePrice*item.houseArea}}万</span>
-              <span class="unit_price">{{item.housePrice}}万元/平</span>
+              <span class="price_sum">{{item.pprice*item.pdesc}}万</span>
+              <span class="unit_price" v-model="dj">{{item.pprice}}万元/平</span>
             </div>
           </div>
        </div></router-link>
@@ -31,8 +31,14 @@
 		props:["hesf"],
 		data(){
 			return{
-				index:""
+				flag1:true,
+				flag2:true,
+				flag3:true,
+				dj:""
 			}
+		},
+		mounted(){
+			
 		}
 	}
 </script>
