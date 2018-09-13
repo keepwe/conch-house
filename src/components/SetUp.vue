@@ -53,18 +53,24 @@
           this.$router.back(-1);
         },
           loginOut(){
-            setCookie("token","",-7);
-            setCookie("uid","",-7);
+//          setCookie("token","",-7);
+//          setCookie("uid","",-7);
+			let storage = window.localStorage;
+			storage.clear();
             this.$router.push("/mine")
           }
       },
       mounted(){
         this.$nextTick(function () {
-          this.token = getCookie("token");
-          this.uid = getCookie("uid");
+//        this.token = getCookie("token");
+//        this.uid = getCookie("uid");
+			let stroage = window.localStorage;
+			this.token = stroage.token;
+        	this.uid = stroage.name;
           if (this.token === "false") {
             this.token = false;
-            this.uid = getCookie("uid");
+//          this.uid = getCookie("uid");
+			this.uid = stroage.name;
           } else {
             this.token = true
           }

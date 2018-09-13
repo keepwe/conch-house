@@ -78,8 +78,11 @@
                 type: 'success',
                 duration:2000,
               });
-              setCookie("uid",_this.username,30);
-              setCookie("token",false,30);
+//            setCookie("uid",_this.username,30);
+//            setCookie("token",false,30);
+							var storage = window.localStorage;
+							storage["name"]=_this.username;
+							storage["token"]=false;
               _this.$router.push('/mine')
             }
           },

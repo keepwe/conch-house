@@ -143,11 +143,15 @@
     },
     mounted() {
       this.$nextTick(function () {
-        this.token = getCookie("token");
-        this.uid = getCookie("uid");
+//      this.token = getCookie("token");
+//      this.uid = getCookie("uid");
+				var stroage = window.localStorage;
+				this.token = stroage.token;
+        this.uid = stroage.name;
         if (this.token === "false") {
           this.token = false;
-          this.uid = getCookie("uid");
+//        this.uid = getCookie("uid");
+          this.uid = stroage.name;
         } else {
           this.token = true
         }
